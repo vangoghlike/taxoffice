@@ -1,0 +1,265 @@
+/*$(function(){
+    $(window).resize(function(){
+        location.reload();
+    });
+});*/
+
+//common
+$(function(){
+	function header_move() {
+		var window_wd = $(window).width();
+
+		if (window_wd < 931) { 			
+			$(".gnb .gnb_main>li").click(function(){
+				$(this).toggleClass("on");
+				$(this).find(".gnb_sub").stop().slideToggle();
+			});
+
+			$(".aside").show();
+			$(".topbtn_new").hide();
+			
+			//scroll aside top_btn
+			/*$(window).scroll(function(){
+				let scroll_top = $(window).scrollTop();
+				
+				if (scroll_top >= 0) {
+					$(".topbtn_new").hide();
+					$(".aside").show();
+				} else {
+					$(".topbtn_new").hide();
+					(".aside").show();
+				}
+			});*/
+
+		} else {
+			$(".gnb").show();
+
+			$(".gnb_main .gnb_menu").hover(function(){
+				$(this).children(".gnb_sub").stop().fadeIn(500);
+			},function(){
+				$(this).children(".gnb_sub").stop().fadeOut(100);
+			});
+
+			//scroll aside top_btn
+			$(window).scroll(function(){
+				let scroll_top = $(window).scrollTop();
+
+				if (scroll_top > 100) {
+					$(".aside, .topbtn_new").fadeIn();
+				} else {
+					$(".aside, .topbtn_new").fadeOut();
+				}
+			});
+		} 
+	}
+
+	header_move();
+
+    //resize
+    $(window).resize(function(){
+		header_move();
+    });
+
+    //language on
+    $(".lang a").eq(0).addClass("on");
+
+    $(".lang a").click(function(){
+        $(".lang a").removeClass("on");
+        $(this).addClass("on");
+    });
+
+    //top_btn
+    $(".topbtn_new").click(function() {
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
+    //mobile ham menu
+    $(".ham").click(function() {
+        $(this).toggleClass("on");
+		$('.member_wrap, .lang.mo').toggleClass("on2");
+		
+
+        if ($(this).hasClass("on")) {
+            $(".gnb, .search_wrap, .dimmed").fadeIn();
+			$('.sbox_1230').css("display","none");
+        } else {
+            $(".gnb, .search_wrap, .dimmed").fadeOut();
+			$('.sbox_1230').css("display","block");
+        }
+    });
+
+    $(".dimmed").click(function() {
+        $(".ham").removeClass("on");
+        $(".gnb, .search_wrap, .dimmed").fadeOut();
+    });
+
+	// counse add info btn
+	$('.h_slide .csl_info_btn').on('click', function(){
+		$(this).closest('.h_slide1').find('.hidden_li').slideToggle();
+
+		if ( $(this).hasClass('close') ) {
+			$(this).removeClass('close').addClass('open');
+			$(this).text('정보창 닫기');
+		} else {
+			$(this).removeClass('open').addClass('close');
+			$(this).text('주요정보 더보기');
+		}
+	});
+	// counse add info btn
+	$('.consulting_list .csl_info_btn').on('click', function(){
+		if ( $(this).hasClass('taxcall') ) {
+			$(this).closest('.h_slide1').find('.hidden_li').slideToggle();
+		} else {
+			$(this).closest('.viewInfo').find('.hidden_li').slideToggle();
+		}
+		if ( $(this).hasClass('close') ) {
+			$(this).removeClass('close').addClass('open');
+			$(this).text('정보창 닫기');
+		} else {
+			$(this).removeClass('open').addClass('close');
+			$(this).text('주요정보 더보기');
+		}
+	});
+	$('.managerTab .add_info_btn').on('click', function(){
+		$(this).closest('li').find('.hidden_area').slideToggle();
+
+		if ( $(this).hasClass('close') ) {
+			$(this).removeClass('close').addClass('open');
+			$(this).text('정보창 닫기');
+		} else {
+			$(this).removeClass('open').addClass('close');
+			$(this).text('주요정보 더보기');
+		}
+	});
+
+	// tax_rate event
+	$('.tr_tab li a').on('click', function(){
+		$('.tr_tab li a').removeClass('on');
+		$(this).addClass('on');
+
+		$('.tax_rate_cont').hide();
+		$('.tax_rate_cont.tr_con' + ($(this).parent('li').index()+1)).fadeIn();
+	});
+
+	$('.tr_con_tab li a').on('click', function(){
+		$('html,body').animate({scrollTop:$('[data-tr="' + $(this).attr('data-click') + '"]').offset().top - 80}, 500);
+	});
+});
+
+//main
+$(function(){
+  /*  //v_quick slide on
+   /* $(".v_quick .q_slide>a").eq(3).addClass("on");
+    $(".v_quick .q_slide>a").click(function(){
+        $(".v_quick .q_slide>a").removeClass("on");
+        $(this).addClass("on");
+    });
+
+    //helper slide on
+    $(window).on('load resize', function() { 	
+		
+        if ($(window).width() > 930) { 
+
+            $(".i_slide a").click(function(){
+                $(".i_slide a").removeClass("on");
+                $(this).addClass("on");
+            });
+        }
+    });
+*/
+    
+    //info tab menu on
+    $(".info .info_tab li").eq(0).addClass("on");
+    $(".info .info_tab li").click(function(){
+        $(".info .info_tab li").removeClass("on");
+        $(this).addClass("on");
+    });
+
+	$(".info .i_slide .item").mouseenter(function(){
+		$(this).addClass("on");
+	});
+	$(".info .i_slide .item").mouseleave(function(){
+		$(this).stop().removeClass("on");
+	});
+
+
+
+
+//sub
+$(function(){
+    //sub tab menu on
+   /* $(".sub_nav li").eq(0).addClass("on");*/
+
+    $(".sub_nav li").click(function(){
+        $(".sub_nav li").removeClass("on");
+        $(this).addClass("on");
+    });
+
+	// 문답
+	$('.exam_wrap .correct tag').on('click', function(){
+		if ( $(this).hasClass('hide') ) {
+			$(this).removeClass('hide');
+			$(this).text('정답');
+			$(this).closest('.exam_wrap').find('.item.answer .exam_answer:not(.no_control)').removeClass('view');
+			$(this).closest('.exam_wrap').find('.item.answer .exam_answer:not(.no_control)').addClass('hidn');
+			$(this).closest('.exam_wrap').find('.item.answer .exam_answer_txt').removeClass('view');
+			$(this).closest('.exam_wrap').find('.item.answer .exam_answer_txt').addClass('hidn');
+			$(this).closest('.exam_wrap').find('.item.answer .answer_inner .txt').addClass('hidn');
+		} else {
+			$(this).addClass('hide');
+			$(this).text('숨김');
+			$(this).closest('.exam_wrap').find('.item.answer .exam_answer:not(.no_control)').removeClass('hidn');
+			$(this).closest('.exam_wrap').find('.item.answer .exam_answer:not(.no_control)').addClass('view');
+			$(this).closest('.exam_wrap').find('.item.answer .exam_answer_txt').removeClass('hidn');
+			$(this).closest('.exam_wrap').find('.item.answer .exam_answer_txt').addClass('view');
+			$(this).closest('.exam_wrap').find('.item.answer .answer_inner .txt').removeClass('hidn');
+
+			var exam_offset = $(this).closest('.exam_wrap').find('.item.answer').offset().top;
+			$('html, body').animate({scrollTop: exam_offset-16},400);
+		}
+	});
+
+	// on off menu
+	$('.onoff_btn').on('click', function(){
+		if ($(this).hasClass('open')) {
+			$(this).removeClass('open').addClass('close');
+			$('.subNav_wrap.onoff_menu').removeClass('close_menu');
+			$(this).find('.onoff_txt').text('접기');
+		} else {
+			$(this).removeClass('close').addClass('open');
+			$('.subNav_wrap.onoff_menu').addClass('close_menu');
+			$(this).find('.onoff_txt').text('펼치기');
+		}
+	});
+
+});
+
+
+$(document).ready(function(){
+	$('.family_box211112').click(function(){
+		$(this).siblings('.family_sbox').slideToggle(500);
+		$('.family_box211112').toggleClass('on');
+	});
+	$('.mo_family_box').click(function(){
+		$(this).siblings('.family_sbox').slideToggle(500);
+		$('.mo_family_box').toggleClass('on');
+	});
+	$(".mo_gnb .mo_case_menu").click(function(){
+		$(".mo_gnb .family_sbox").stop().slideToggle(500);
+	});
+
+	/*$('.lang.mo').click(function(){
+		$('.lang_mo_box').slideToggle(300);
+		$('.lang.mo').toggleClass('on');
+	});*/
+})
+
+$(document).ready(function(){
+	$('.foot_family_box').click(function(){
+		$('.foot_family_inner').slideToggle(500);
+		$('.foot_family_top img').toggleClass('on');
+	});
+
+});
+
+});

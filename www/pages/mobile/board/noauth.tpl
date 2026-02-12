@@ -1,0 +1,1 @@
+<script>location.href = '{BASE_URL}/login';</script>

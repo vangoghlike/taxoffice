@@ -1,0 +1,501 @@
+<section class="visual k_link_box two_row_visual">
+    <div class="selim_kakaoLink">
+        <a id="kakao-link-btn" href="javascript:sendLink()">
+            <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png">
+            <span>앱 추천하기</span>
+        </a>
+    </div>
+    <div class="">
+        <div class="v_slide">
+            <div class="left">
+                <div class="swiper-wrap">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a class="view_area" href="/sub/?cat_no=327">
+                                <div class="inner">
+                                    <p class="empha">
+                                        종합부동산세 정리 (2024)
+                                    </p>
+                                    <p>
+                                        - 종합부동산세 정의 및 특징<br/>
+                                        - 납세 정의<br/>
+                                        - 과세 표준
+                                        <br/>
+                                    </p>
+                                </div>
+                            </a><br><br>
+                            <a class="more_btn" href="/sub/?cat_no=327">
+                                자세히 보기
+                            </a>
+                            <img class="absol_img" src="/pub/images/main/budget.png" alt="이미지"/>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=424&sk=&sw=&offset=&category=">
+                                <div class="inner">
+                                    <p class="empha">
+                                        실질적 절세를 위한 가업승계 요건
+                                    </p>
+                                    <p>
+                                        - 가업승계 증여 및 창업자금의 증여 특례<br/>
+                                        - 가업승계 상속<br/>
+                                        <br/>
+                                        <br/>
+                                    </p>
+                                </div>
+                            </a><br><br>
+                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=424&sk=&sw=&offset=&category=">
+                                자세히 보기
+                            </a>
+                            <img class="absol_img" src="/pub/images/main/budget.png" alt="이미지"/>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=423&sk=&sw=&offset=&category=">
+                                <div class="inner">
+                                    <p class="empha">
+                                        1세대 1주택 Case별 정리
+                                    </p>
+                                    <p>
+                                        - 1세대의 개념<br/>
+                                        - 고가주택으로 과세되는 부분<br/>
+                                        - 2주택이지만 부득이한 경우, 비과세<br/>
+                                        <br/>
+                                    </p>
+                                </div>
+                            </a><br><br>
+                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=423&sk=&sw=&offset=&category=">
+                                자세히 보기
+                            </a>
+                            <img class="absol_img" src="/pub/images/main/budget.png" alt="이미지"/>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=422&sk=&sw=&offset=&category=">
+                                <div class="inner">
+                                    <p class="empha">
+                                        법인의 취득세 중과 검토
+                                    </p>
+                                    <p>
+                                        (1) 법인설립 및 사무소 설치에 따른 부동산<br/>
+                                        (2) 본점·주사무소 등 중과세<br/>
+                                        (3) 대도시내 공장 중과세<br/>
+                                        <br/>
+                                    </p>
+                                </div>
+                            </a><br><br>
+                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=422&sk=&sw=&offset=&category=">
+                                자세히 보기
+                            </a>
+                            <img class="absol_img" src="/pub/images/main/budget.png" alt="이미지"/>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=421&sk=&sw=&offset=&category=">
+                                <div class="inner">
+                                    <p class="empha">
+                                        2025년부터 적용될 세법 개정안 소개
+                                    </p>
+                                    <p>
+                                        1. 투자·고용·지역발전을 촉진 지원 세제<br/>
+                                        2. 기업 경쟁력 제고 세제<br/>
+                                        3. 자본시장 활성화를 위한 세제<br/>
+                                        이어서 보기..<br/>
+                                    </p>
+                                </div>
+                            </a><br><br>
+                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=421&sk=&sw=&offset=&category=">
+                                자세히 보기
+                            </a>
+                            <img class="absol_img" src="/pub/images/main/budget.png" alt="이미지"/>
+                        </div>
+<!---->
+<!--                        <div class="swiper-slide">-->
+<!--                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=420&sk=&sw=&offset=&category=">-->
+<!--                                <div class="inner">-->
+<!--                                    <p class="empha">-->
+<!--                                        벤처기업 인증제도 및 벤처기업에 대한 조세지원제도-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        벤처기업 인증제도<br/>-->
+<!--                                        벤처기업에 대한 조세지원 제도<br/>-->
+<!--                                        <br/>-->
+<!--                                        <br/>-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </a><br><br>-->
+<!--                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=420&sk=&sw=&offset=&category=">-->
+<!--                                자세히 보기-->
+<!--                            </a>-->
+<!--                            <img class="absol_img" src="/pub/images/main/budget.png" alt="이미지"/>-->
+<!--                        </div>-->
+<!---->
+<!--                        <div class="swiper-slide">-->
+<!--                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=419&sk=&sw=&offset=&category=">-->
+<!--                                <div class="inner">-->
+<!--                                    <p class="empha">-->
+<!--                                        주식 등으로 인센티브 지급 사례-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        스톡옵션 부여계약<br/>-->
+<!--                                        스톡옵션 부여대상<br/>-->
+<!--                                        세제지원 내용<br/>-->
+<!--                                        <br/>-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </a><br><br>-->
+<!--                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=419&sk=&sw=&offset=&category=">-->
+<!--                                자세히 보기-->
+<!--                            </a>-->
+<!--                            <img class="absol_img" src="/pub/images/main/budget.png" alt="이미지"/>-->
+<!--                        </div>-->
+
+
+
+
+<!--                        <div class="swiper-slide">-->
+<!--                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=409&sk=&sw=&offset=&category=">-->
+<!--                                <div class="inner">-->
+<!--                                    <p class="empha">-->
+<!--                                        주식 등 양도에 대한 과세 규정 정리-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        - 소득세법 제94조 제1항 3호, <br>-->
+<!--                                        &nbsp;&nbsp;&nbsp;동법 제104조 및 동 시행령 제 157조 <br>-->
+<!--                                        &nbsp;&nbsp;&nbsp;제167조의 8, 부칙 37조<br/>-->
+<!--                                        - 소득세법 제87조의 2 ~ 제87조의 20-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </a><br><br>-->
+<!--                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=409&sk=&sw=&offset=&category=">-->
+<!--                                자세히 보기-->
+<!--                            </a>-->
+<!--                            <img class="absol_img" src="/pub/images/main/building.png" alt="이미지"/>-->
+<!--                        </div>-->
+<!---->
+<!--                        <div class="swiper-slide">-->
+<!--                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=408&sk=&sw=&offset=&category=">-->
+<!--                                <div class="inner">-->
+<!--                                    <p class="empha">-->
+<!--                                        가족간 부동산 등 재산 거래의 경우, 증여세 검토<br>-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        - 가족간의 부동산 거래에 대한 세법의 취급<br>-->
+<!--                                        - 가족간 부동산 거래시 고려하여야 할 요소<br><br><br>-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </a><br><br>-->
+<!--                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=408&sk=&sw=&offset=&category=">-->
+<!--                                자세히 보기-->
+<!--                            </a>-->
+<!--                            <img class="absol_img" src="/pub/images/main/building.png" alt="이미지"/>-->
+<!--                        </div>-->
+<!---->
+<!--                        <div class="swiper-slide">-->
+<!--                            <a class="view_area" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=407&sk=&sw=&offset=&category=">-->
+<!--                                <div class="inner">-->
+<!--                                    <p class="empha">-->
+<!--                                        자기주식 취득 관련한 검토<br>-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        - 상법상 자기주식 취득 규정<br>-->
+<!--                                        - 근로자복지기본법상 자기주식 취득 규정<br><br>-->
+<!---->
+<!--                                        (유의할 점 및 취득 절차)-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </a><br><br>-->
+<!--                            <a class="more_btn" href="/sub/index.php?cat_no=22&boardid=Column&mode=view&idx=407&sk=&sw=&offset=&category=">-->
+<!--                                자세히 보기-->
+<!--                            </a>-->
+<!--                            <img class="absol_img" src="/pub/images/main/building.png" alt="이미지"/>-->
+<!--                        </div>-->
+
+<!--                        <div class="swiper-slide">-->
+<!--                            <a class="view_area" href="http://www.taxoffice.co.kr/sub/index.php?cat_no=157&boardid=taxes&mode=view&idx=42&sk=&sw=&offset=&category=">-->
+<!--                                <div class="inner">-->
+<!--                                    <p class="empha">-->
+<!--                                        부동산 증여 취득에 대한 취득세 과세표준 개정<br>-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        부동산을 증여로 취득하는 경우<br>-->
+<!--                                        취득세 과세표준이 시가표준액이 아닌 시가인정액으로 개정되었습니다.<br><br>-->
+<!---->
+<!--                                        (2023.01.01. 이후 증여분부터)-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!--                            </a><br><br>-->
+<!--                            <a class="more_btn" href="http://www.taxoffice.co.kr/sub/index.php?cat_no=157&boardid=taxes&mode=view&idx=42&sk=&sw=&offset=&category=">-->
+<!--                                자세히 보기-->
+<!--                            </a>-->
+<!--                            <img class="absol_img" src="/pub/images/main/building.png" alt="이미지"/>-->
+<!--                        </div>-->
+                        <!--<div class="swiper-slide">
+                            <a class="view_area" href="http://www.taxoffice.co.kr/sub/index.php?cat_no=161&boardid=etc1&mode=view&idx=73&sk=&sw=&offset=&category=">
+                                <p class="empha">
+                                    민간임대주택 사업자는 12월9일 까지 부기등록하셔야 합니다.<br>
+                                                  민간임대주택 사업자의 부기등기 (2022.11.10.)<br>
+                                </p>
+                                <p>
+                                    1. 부기의무대상자 : 민간임대주택법 제5조에 따라 시군구청장에 등록을 신청하여 등록된 모든 민간임대주택사업자(오피스텔 포함)<br>
+                                    2. 시행시기 : 2020.12.10. 이후 등록한 민간임대주택은 지체 없이 등기해야 합니다.<br>
+                                    다만, 시행일 이전에 등록한 민간임대주택의 경우 2022.12.09. 까지 부기등기하면 됩니다. (2년유예 기간 적용)<br>
+                                    3. 위반시 제재 : 과태료 200만원 ~ 500만원 발생
+                                </p>
+                            </a>
+                            <a class="more_btn" href="http://www.taxoffice.co.kr/sub/index.php?cat_no=161&boardid=etc1&mode=view&idx=73&sk=&sw=&offset=&category=">
+                                자세히 보기
+                            </a>
+                        </div>-->
+                        <div class="swiper-slide slogan">
+                            <p>
+                                처음부터 끝까지<span class="br"></span>
+                                <strong>고객을 위하여<span class="br mo"></span> 내 가족의 일처럼,<span class="br"></span></strong>
+                                세림세무법인의 이념입니다.<span class="br"></span>
+                            </p>
+                        </div>
+<!--                        <div class="swiper-slide slogan">-->
+<!--                            <p>-->
+<!--                                분야별 전문성을 가진<span class="br"></span>-->
+<!--                                <strong>세림의 세무사들이 협업하여,</strong><br>-->
+<!--                                고객님의 업무를 지원합니다.-->
+<!--                            </p>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="img_wrap">
+                    <img src="/pub/images/new/index2_img.jpg" alt="이미지"/>
+                </div>
+            </div>
+
+            <!-- Add Pagination -->
+            <?
+            $bannerTotal = 6;
+            ?>
+            <div class="swiper-pagination"></div>
+            <div class="v_btn_wrap">
+                <div class="v_btn">
+                    <div class="swiper-button-prev"></div>
+                    <div class="slide_num">
+                        <div class="num now" id="page_number">01</div>
+                        <div class="num all" id="all_number">0<?=$bannerTotal?></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="stop"></div>
+                </div>
+            </div>
+        </div>
+        <div class="v_quick content_wrap">
+            <div class="q_slide q_pc pc_view">
+                <a href="/sub/?cat_no=102" class="q3">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>기장/Pay roll</span><br>
+                        <span>업무의뢰</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=32" class="q1">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>회사설립<br />업무의뢰</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=139" class="q7">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>외투기업</span><br>
+                        <span>업무의뢰</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=29" class="q4">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>업무보수표</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=280" class="q1">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>세율표</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=22" class="pc_view q8">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>세금이야기</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=22" class="mb_view q8">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>세금이야기</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=240" class="pc_view q2">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>가업승계<br />상속·증여</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=45" class="pc_view q6">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>신축·시행사<br />업무</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=118" class="mb_view q5">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>세무조사 및<br />조세불복</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="q_slide mo">
+                <a href="/sub/?cat_no=77">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>상담센터</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=172">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>신고도우미</span>
+                    </div>
+                </a>
+
+                <a href="/sub/?cat_no=21">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>한페이지<br>세무정보</span>
+                    </div>
+                </a>
+
+                <a href="https://blog.naver.com/selimtaxoffice">
+                    <div class="ir_pm q_img"></div>
+                    <div class="q_txt">
+                        <span>블로그</span>
+                    </div>
+                </a>
+
+                <div class="inner_row">
+                    <a href="/sub/?cat_no=124">
+                        <div class="ir_pm q_img"></div>
+                        <div class="q_txt">
+                            <span>회사설립지원</span>
+                        </div>
+                    </a>
+
+                    <a href="/sub/?cat_no=134">
+                        <div class="ir_pm q_img"></div>
+                        <div class="q_txt">
+                            <span>외국인투자기업 설립지원</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <script>
+
+                $(function(){
+                    var slider = $('.v_quick');
+                    var slickOptions = {
+                        slide: 'div',
+                        slidesToShow : 1,
+                        slidesToScroll : 1,
+                        arrows: false,
+                        dots: true
+                    };
+
+                    $(window).on('load resize', function() {
+                        if($(window).width() < 751) {
+                            slider.not('.slick-initialized').slick(slickOptions);
+                        }else{
+                            slider.filter('.slick-initialized').slick('unslick');
+
+                        }
+                    });
+
+                });
+
+            </script>
+        </div>
+
+    </div>
+</section>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+
+
+
+
+    var mySwiper = new Swiper('.v_slide .swiper-wrap',{
+        spaceBetween:20,
+        speed: 2000,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        loopedSlides: 1,
+        navigation : { // 네비게이션
+            nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+            prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+        },
+    })
+
+    mySwiper.on("slideChangeTransitionEnd", function () {
+        //var page_number = String(document.querySelector(".swiper-slide-active").getAttribute("aria-label"));
+        //var new_num = page_number.slice(0,1);
+
+        var page_number = parseInt(document.querySelector(".swiper-slide-active").getAttribute("data-swiper-slide-index"));
+        page_number++;
+
+        document.getElementById("page_number").innerHTML = '0' + page_number;
+    });
+
+
+
+    $(".stop").click(function(){
+        if($(this).hasClass("on")){
+            $(this).removeClass("on");
+            mySwiper.autoplay.start();
+        } else {
+            $(this).addClass("on");
+            mySwiper.autoplay.stop();
+        }
+    });
+
+    // 메인 카카오 앱 추천
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('74546251e56d8047240891a67beafc9c');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createCustomButton({
+        container: '#kakao-link-btn',
+        templateId: 32859,
+        templateArgs: {
+            'title': '앱 추천',
+            'description': '세림세무법인 앱추천'
+        }
+    });
+
+</script>
+
+<!-- visual end -->

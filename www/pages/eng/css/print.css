@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@media print {
+    .viewWrap {border-top:2px solid #0b4ea2;}
+    .viewWrap .line {padding:15px 0; border-bottom:1px solid #dedede}
+    .viewWrap .line:after {content:''; display:block; clear:both;}
+    .viewWrap .line .left {float:left;}
+    .viewWrap .line .right {float:right;}
+    .viewWrap .line .right .box  .tit {width:4.5rem;}
+    .mr50 {margin-right:50px;}
+    .viewContent {font-size:1.0rem; line-height:1.8; padding:2.25rem 0.5rem; border-bottom:1px solid #dedede; margin-bottom:20px;}
+
+    .viewWrap .line .box {content:''; display:block; clear:both;}
+    .viewWrap .line .box .tit {float:left; font-size:0.875rem; color:#333333; font-weight:bold; width:80px; padding-left:13px; background:url('../images/sub/blist_bullet.gif') right center no-repeat; margin-right:15px;}
+    .viewWrap .line .box .txt {float:left; font-size:0.875rem; padding-right:20px;}
+    .viewWrap .line .box .txt.bold {color:#333333; font-weight:bold;}
+    .btnDownload {display:inline-block; padding-right:33px; margin-right:10px ;  background:url('../images/sub/downBtn.png') right center no-repeat; }
+    .viewWrap .line .bbs_print_btn {
+        display: none;
+    }
+    #sns_share {
+        display: none;
+    }
+    .h3Wrap.print {
+        margin-top:12px;
+    }
+    .ft_bottom.print {
+        margin-top:12px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

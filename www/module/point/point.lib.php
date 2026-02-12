@@ -1,0 +1,217 @@
+<?
+//사용가능 적립금 가져오기
+function getNowPoint($user_id){
+	$tbl = $GLOBALS["_conf_tbl"]["point"];//적립금 테이블
+    
+    $sql  = "SELECT nowpoint ";
+    $sql .= "FROM $tbl ";
+    $sql .= "WHERE user_id = '$user_id' order by idx desc limit 1";
+    $rs = mysql_query($sql);
+    $total_rs = mysql_num_rows($rs);
+    
+	if($total_rs > 0){
+			$list = mysql_fetch_assoc($rs);
+	}
+
+	return $list;
+}
+
+//적립금 사용
+function setMinusPoint($user_id, $minus, $contents){
+	$tbl = $GLOBALS["_conf_tbl"]["point"];//적립금 테이블
+
+	//현재 사용가능 적립금 체크
+	$arrNowPoint = getNowPoint($user_id);
+
+	//사용하려는 적립금이 사용가능한 현재 적립금보다 작으면 사용불가
+	if($arrNowPoint[nowpoint] < $minus){
+		return false;
+	}
+
+	$save_point = $arrNowPoint[nowpoint] - $minus;
+
+	$sql = "INSERT INTO ".$tbl." set 
+		user_id = '$user_id',
+		minus = '$minus',
+		nowpoint = '$save_point',
+		wdate = now(),
+		ip = '".$_SERVER[REMOTE_ADDR]."',
+		contents = '$contents'
+	";
+
+	if($minus > 0){
+		$rs = mysql_query($sql, $GLOBALS[dblink]);
+		$insert_idx = mysql_insert_id($GLOBALS[dblink]);
+		$total = mysql_affected_rows($GLOBALS[dblink]);
+	}
+	if($total > 0){
+		return $insert_idx;
+	}else{
+		return false;
+	}
+}
+
+//적립금 지급
+function setPlusPoint($user_id, $plus, $contents){
+	$tbl = $GLOBALS["_conf_tbl"]["point"];//적립금 테이블
+	
+	//현재 사용가능 적립금 체크
+	$arrNowPoint = getNowPoint($user_id);
+
+	$save_point = $arrNowPoint[nowpoint] + $plus;
+
+	$sql = "INSERT INTO ".$tbl." set 
+		user_id = '$user_id',
+		plus = '$plus',
+		nowpoint = '$save_point',
+		wdate = now(),
+		ip = '".$_SERVER[REMOTE_ADDR]."',
+		contents = '$contents'
+	";
+
+	if($plus > 0){
+		$rs = mysql_query($sql, $GLOBALS[dblink]);
+		$insert_idx = mysql_insert_id($GLOBALS[dblink]);
+		$total = mysql_affected_rows($GLOBALS[dblink]);
+	}
+	if($total > 0){
+		return $insert_idx;
+	}else{
+		return false;
+	}
+}
+
+//적립금 기록 가져오기
+function getPointList($user_id, $type, $scale, $offset=0){
+	$tbl = $GLOBALS["_conf_tbl"]["point"];//적립금 테이블
+
+	$que_where = " AND user_id='$user_id' ";
+
+	if($type=="minus"){
+		$que_where .= " AND minus > 0 ";
+	}
+
+	if($type=="plus"){
+		$que_where .= " AND plus > 0 ";
+	}
+
+	//카운트
+	$sql = "select count(idx) from $tbl WHERE 1=1 $que_where ";
+    $rs = mysql_query($sql, $GLOBALS[dblink]);
+    $row = mysql_fetch_row($rs);
+    $total_rs = $row[0];
+
+	//목록
+    $sql  = "SELECT * ";
+    $sql .= "FROM ".$tbl." ";
+    $sql .= "WHERE 1=1 $que_where  ORDER BY idx DESC ";
+
+    if($total_rs > 0){
+        $list['total'] = $total_rs;
+        // 페이지 네비게이션 오프셋 지정.
+		if(!$offset){
+			$offset=0;
+		}else{
+			$offset=$offset;
+		}
+
+		// offset 이 전체 게시물수보다 작을때 offset 을 전체게시물 - 페이지당 보여줄 글 수로 offset 설정
+		if($total_rs<=$offset){
+			$offset = $total_rs - $scale;
+		}
+
+		if($scale != "0"){
+			$sql .= " limit $offset,$scale ";
+		}
+		$rs = mysql_query($sql,$GLOBALS[dblink]);
+
+		// offset 을 이용한 limit 가 적용된 갯수
+		$total = mysql_num_rows($rs);
+		$list['list']['total'] = $total;
+		// 페이지 네비게이션 오프셋 지정.
+
+        for($i=0; $i < $total; $i++){
+            $list['list'][$i] = mysql_fetch_assoc($rs);
+        }
+    }else{
+        $list['total'] = 0;
+    }
+
+    return $list;
+}
+
+//적립금 기록 가져오기
+function getPointListAdmin($sw, $sk, $type, $s_date, $e_date, $scale, $offset=0){
+	$tbl = $GLOBALS["_conf_tbl"]["point"];//적립금 테이블
+	$tbl_member = $GLOBALS["_conf_tbl"]["member"];//회원 테이블
+
+	if($sw == "id"){
+		$que_where .= " AND B.user_id like '%$sk%' ";
+	}else if($sw == "name"){
+		$que_where .= " AND B.user_name like '%$sk%' ";
+	}else if($sw == "all"){
+		$que_where .= " AND ( (B.user_name like '%$sk%') OR (B.user_id like '%$sk%') )";
+	}
+
+	if($type=="minus"){
+		$que_where .= " AND A.minus > 0 ";
+	}
+
+	if($type=="plus"){
+		$que_where .= " AND A.plus > 0 ";
+	}
+
+	if($s_date){
+		$que_where .= " AND A.wdate >= '$s_date 00:00:00' ";
+	}
+
+	if($e_date){
+		$que_where .= " AND A.wdate <= '$e_date 23:59:59' ";
+	}
+
+
+	//카운트
+	$sql = "select count(A.idx) from $tbl A LEFT JOIN ".$tbl_member." B ON A.user_id=B.user_id WHERE 1=1 $que_where ";
+    $rs = mysql_query($sql, $GLOBALS[dblink]);
+    $row = mysql_fetch_row($rs);
+    $total_rs = $row[0];
+
+	//목록
+    $sql  = "SELECT A.*, B.user_name ";
+    $sql .= "FROM ".$tbl." A ";
+	$sql .= "LEFT JOIN ".$tbl_member." B ON A.user_id=B.user_id ";
+    $sql .= "WHERE 1=1 $que_where  ORDER BY idx DESC ";
+    if($total_rs > 0){
+        $list['total'] = $total_rs;
+        // 페이지 네비게이션 오프셋 지정.
+		if(!$offset){
+			$offset=0;
+		}else{
+			$offset=$offset;
+		}
+
+		// offset 이 전체 게시물수보다 작을때 offset 을 전체게시물 - 페이지당 보여줄 글 수로 offset 설정
+		if($total_rs<=$offset){
+			$offset = $total_rs - $scale;
+		}
+
+		if($scale != "0"){
+			$sql .= " limit $offset,$scale ";
+		}
+		$rs = mysql_query($sql,$GLOBALS[dblink]);
+
+		// offset 을 이용한 limit 가 적용된 갯수
+		$total = mysql_num_rows($rs);
+		$list['list']['total'] = $total;
+		// 페이지 네비게이션 오프셋 지정.
+		    
+        for($i=0; $i < $total; $i++){
+            $list['list'][$i] = mysql_fetch_assoc($rs);
+        }
+    }else{
+        $list['total'] = 0;
+    }
+
+    return $list;
+}
+?>

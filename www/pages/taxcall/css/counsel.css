@@ -1,0 +1,1313 @@
+@charset "utf-8";
+
+.wrap.counsel {
+    margin:0 auto;
+    min-width:320px;
+    max-width:100%;
+}
+.subContainer {
+    margin:0 auto;
+    padding:0rem 0 1.75rem;
+    min-width:320px;
+    max-width:100%;
+    background: #fff;
+}
+.subContainer.rsorder {
+    padding:1.75rem 0 1.75rem;
+}
+.subContainer.rsorder .btnCenter.seCst a.btnGray2    {
+    float:left;
+    display:block;
+    margin:1rem auto 0;
+}
+.subContainer.rsorder .btnCenter.seCst a.btnBlue {
+    float:right;
+    display:block;
+    margin:1rem auto 0;
+}
+.rsorder .subNav.subNavcustomer {
+    display:none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrap.counsel {
+        margin:0 auto;
+        padding:4rem 0 1.75rem;
+        min-width:320px;
+        max-width:640px;
+    }
+    .subTop.counsel {
+        display:none;
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    font-size:14px; color:#949494;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size:14px; color:#949494;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+    font-size:14px; color:#949494;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size:14px; color:#949494;
+}
+
+
+.colBox {padding:20px; background:#e9e9e9;}
+.colBox2 {padding:20px 5px; background:#e9e9e9;}
+.colBox3 {padding:20px;}
+
+.ipBox {background:#fff;width:100%; font-size:14px; position:relative;margin-bottom: 10px;display:flex;}
+.ipBox.bbNone {border-bottom:none;}
+.ipBox span.title{display:inline-block;width:33%;vertical-align: middle;line-height:43px}
+.joinStep3 .ipBox {background:none;}
+.ipBox>div{width:73%;    display: inline-block;}
+.ipBox div.id input{width:70%}
+.ipBox div.id .rightBtn,
+.ipBox div.adress .rightBtn{background:#999;border:none;color:#fff;top:0;    text-align: center; padding: 0;line-height: 43px;width: 23%;right:0;}
+.ipBox div.adress input{margin-top:10px;}
+.ipBox div.adress input:first-child{margin-top:0;width:70%}
+.ipBox input {background:#fff;  padding-left:10px; height:43px; line-height:43px; width:100%;font-size:14px; border:none;}
+.ipType01 {background:#fff; border:1px solid #dfdfdf; padding-left:10px; height:43px; line-height:43px; width:100%; font-size:14px;}
+.rightBtn {position:absolute; right:9px; top:8px; font-size:14px; line-height:14px; color:#233969; border:1px solid #233969; padding:6px 12px;}
+.btnBlue2 { font-size:14px; line-height:14px; color:#233969; border:1px solid #233969; padding:4px 12px;}
+
+/* login form */
+#csl_deepBg {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+#csl_login_form {
+    display:none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    max-width:600px;
+    width:90%;
+    height: auto;
+    border:1px solid #eee;
+    box-shadow:0px 0px 16px rgba(90,100,100,0.6);
+    z-index: 10000;
+}
+#csl_login_form .csl_login_tab {
+    width: 100%;
+    height: 3rem;
+    background: #f9f9f9;
+}
+#csl_login_form .csl_login_tab li {
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+#csl_login_form .csl_login_tab li a {
+    display: block;
+    padding:1rem;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    color: #606060;
+    font-size: 0.875rem;
+    cursor: pointer;
+    background: #dadada;
+}
+#csl_login_form .csl_login_tab li.on a {
+    background: #f9f9f9;
+}
+#csl_login_form .csl_ip_tab {
+    position: relative;
+    width: 100%;
+}
+#csl_login_form .csl_ip_tab li.cit_li {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+#csl_login_form .csl_ip_tab li.cit_li.on {
+    display: block;
+    position: relative;
+}
+#csl_login_form .login {
+    padding-bottom:0;
+    border:none;
+}
+#csl_login_form .csl_lform_hd {
+    position:relative;
+    padding:0.75rem 1rem;
+    font-size:1.12rem;
+    color:#fff;
+    background: #235ba6;
+}
+#csl_login_form .csl_lform_hd .lfom_close {
+    position: absolute;
+    top:0.5rem;
+    right:0.75rem;
+    padding: 0.4rem;
+    font-size:0.8rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+}
+#csl_login_form .csl_lform_hd .lfom_home {
+    position: absolute;
+    top:0.5rem;
+    right:0.75rem;
+    padding: 0.4rem;
+    font-size:0.8rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+}
+#csl_login_form .cit_ip_info {
+    padding:3.125rem 0.5rem 0;
+    background: #f9f9f9;
+}
+#csl_login_form .cit_ip_info > div {
+    margin:0 auto;
+    max-width:460px;
+}
+#csl_login_form .cit_ip_info .info_wrap input {
+    width: 100%;
+    padding: 0 0 0 25px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 5px;
+    height: 50px;
+}
+#csl_login_form .cit_ip_info .btns_wrap {
+    margin-top:20px;
+    padding:30px 0 40px;
+}
+#csl_login_form .cit_ip_info .btns_wrap a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #4f5359;
+    color: #fff;
+}
+
+#csl_login_form .csl_txt_area {
+    clear: both;
+    background: #eaeaea;
+    width:100%;
+}
+#csl_login_form .csl_txt_area p {
+    padding:0.75rem 1.5rem;
+    line-height: 1.6;
+}
+
+/* serim :: custom mobile :: kjw :: 2017.11.22 */
+.ipBox {background-color:rgba(255,255,255,0);}
+.ipBox.seCst {border:none; width:100%; font-size:14px; position:relative;}
+.ipBox.seCst label {float:left;width:40%;height:43px;line-height:43px;}
+.ipBox.seCst label img {vertical-align:middle;width:18px;}
+.ipBox.seCst label img {width:18px;}
+.ipBox.seCst span {float:left;display:block;width:60%;}
+.ipBox.seCst input {background:#fff;  padding-left:10px; height:43px; line-height:43px; width:100%; font-size:14px; border:1px solid #dfdfdf; }
+
+.btn01 a {display:block; text-align:center; color:#fff; font-size:16px; line-height:16px; font-weight:500; background:#233969; padding:14px 0;}
+button.btnBlue a, a.btnBlue {display:block; text-align:center; color:#fff; font-size:16px; line-height:16px;  background:#233969; padding:14px 0;}
+button.btnGray a, a.btnGray {display:block; text-align:center; color:#fff; font-size:16px; line-height:16px; background:#828282; padding:14px 0;}
+button.btnGray2 a, a.btnGray2 {display:block; text-align:center; color:#fff; font-size:16px; line-height:16px; background:#828282; padding:14px 0;}
+button.btnGray.emphasis a {background:#555;}
+
+/* selim :: custom mobile :: kjw :: 2017.11.28 */
+.btnCenter {
+    margin:0 auto;
+    width:100%;
+    max-width: 840px;
+}
+.btnCenter:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.btnCenter > button a,
+.btnCenter > a,
+.btnTwo > a,
+.btn1 > a{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+}
+.btnCenter > button.btnBlue a,
+.btnCenter > a.btnBlue,
+.btnCenter > a.act_submit,
+.btnTwo > a.btnBlue,
+.btn01 > a.act_save {
+    border-bottom: 5px solid #1f2f4f;
+    text-shadow: 0px -2px #1f2f4f;
+}
+.btnCenter > button.btnGray a,
+.btnCenter > a.btnGray,
+.btnTwo > a.btnGray {
+    border-bottom: 5px solid #666;
+    text-shadow: 0px -2px #666;
+}
+.btnCenter > button.btnGray2 a,
+.btnCenter > a.btnGray2,
+.btnTwo > a.btnGray2 {
+    border-bottom: 5px solid #666;
+    text-shadow: 0px -2px #666;
+}
+.btnCenter > button.btnGray.emphasis a {border-bottom: 5px solid #333;}
+.btnCenter.seCst a.btnGray {float:left;  margin-left:1%; width:48%;}
+.btnCenter.seCst a.btnGray2 {float:left;  margin-left:1%; width:48%;}
+.btnCenter.seCst a.btnBlue {float:right; margin-right:1%; width:48%;}
+.btnCenter > button.btnBlue, .btnCenter > button.btnGray, .btnCenter2 > button.btnGray2 {background:none;border:none;}
+
+
+.ckTyp01  {overflow:hidden; position:relative;}
+.ckTyp01 input {margin-top: 0; position:absolute; top:-2px; left:-999em;}
+.ckTyp01 label {margin-left:20px;}
+.ckTyp01 .ckImg {display: inline-block; width:15px; height:15px; background:url('../images/counsel/checkOff02.png') no-repeat; background-size:15px auto; position:absolute; left:0; top:2px; }
+.ckTyp01 input:checked ~ .ckImg {background:url('../images/counsel/checkOn02.png') no-repeat;  background-size:15px auto;}
+
+.ckTyp02  {position:relative;}
+.ckTyp02 input {margin-top: 0; position:absolute; top:-2px; left:-999em;}
+.ckTyp02 label {margin-left:25px; font-size:14px; color:#000000; font-weight:500;}
+.ckTyp02 .ckImg {display: inline-block; width:20px; height:20px; background:url('../images/counsel/checkOff01.png') no-repeat; background-size:20px auto; position:absolute; left:0; top:2px; }
+.ckTyp02 input:checked ~ .ckImg {background:url('../images/counsel/checkOn01.png') no-repeat;  background-size:20px auto;}
+
+
+.joinBox {background:#fff; border:1px solid #dddddd; margin-bottom:10px;}
+.joinBox .top{padding:10px; border-bottom:1px solid #dddddd; }
+.joinBox .top label {margin-left:25px; font-size:14px; color:#000000; font-weight:500;}
+.joinBox .top .ckImg {left:10px; top:10px;}
+.joinBox .scBox {font-size:12px; color:#696969; height:100px; overflow-y:scroll; padding:15px 10px;}
+.joinBox .scBox span {font-weight:500;}
+
+.idSearch  {text-align:center;}
+.idSearch .tit01 {font-size:18px; color:#0269bf; font-weight:500; margin-bottom:20px; padding-top:20px;}
+.idSearch .tit02 {font-size:14px; color:#515151;  margin-bottom:30px;}
+
+.pwTab  {background:#fff; border:1px solid #c9c9c9;}
+.pwTab .top:after {content:''; display:block; clear:both;}
+.pwTab .top a{float:left; width:50%; font-size:14px; color:#515151; background:#f7f7f7; border-bottom:1px solid #c9c9c9; height:43px; line-height:43px; text-align:center;}
+.pwTab .top a.on{color:#0269bf; border-bottom:none; background:#fff;}
+.pwTab .top a:first-child {border-right:1px solid #c9c9c9;}
+.pwTab .cont {padding:25px 15px;}
+.pwTab .cont ul li {display:none;}
+.pwTab .cont ul li:first-child {display:block;}
+
+.myEdit  {background:#fff;}
+.myEdit table {width:100%;}
+.myEdit table th {border-bottom:1px solid #f2f2f2; font-size:14px; color:#000000; padding:15px 0 15px 20px; font-weight:400;}
+.myEdit table td {border-bottom:1px solid #f2f2f2; font-size:14px; color:#626262; padding-left:20px;}
+.titOut {font-size:14px; color:#626262; padding:15px 0 0 20px;}
+.titOut a {font-size:14px; font-weight:500;color:#000000;}
+
+
+.whiteBox {background:#fff; padding:25px 20px;}
+.whiteBox .tit01 {font-size:14px; color:#000000; margin-bottom:20px; line-height:14px;}
+.whiteBox ul {margin-bottom:30px;}
+.whiteBox ul li {font-size:13px; color:#515151; margin-bottom:10px;}
+
+.myPageMain .topInfo {margin-bottom:10px; background:#fff;}
+.myPageMain .line {border-bottom:1px solid #efefef; padding:19px 20px; position:relative;}
+.myPageMain .line:after {content:''; display:block; clear:both;}
+.myPageMain .line .tit {font-size:15px; color:#000000; line-height:15px; float:left;}
+.myPageMain .line .tit.bold {font-weight:500;}
+.myPageMain .line .edit {position:absolute; right:20px; top:15px;  font-size:14px; border-radius:5px; font-weight:500; color:#333333; border:1px solid #454647; text-align:center; padding:5px 10px; line-height:14px; }
+.myPageMain .line .point {position:absolute; right:20px; top:15px;  font-size:17px; font-weight:500; color:#0269bf;line-height:17px; padding:1px 0 1px 25px; background:url('../images/counsel/bgPoint2.png') left 2px no-repeat; background-size:18px auto; }
+
+.myPageMain .box {background:#fff; margin-bottom:10px; padding:25px 20px 25px 20px;}
+.myPageMain .top {position:relative; }
+.myPageMain .top .tit {font-size:17px; line-height:17px; color:#000000; font-weight:500; margin-bottom:23px;}
+.myPageMain .top a {font-size:14px; color:#636363; position:absolute; right:0; top:0; padding-right:15px;  background:url('../images/counsel/bullMore.png') right 5px no-repeat; background-size:7px auto; }
+.myPageMain .base01 {width:100%;}
+.myPageMain .base01 th {font-weight:400; font-size:13px;color:#fff; line-height:13px;; background:#949494; text-align:center; padding:9px 0; border-left:1px solid #fff;}
+.myPageMain .base01 td {font-weight:400; font-size:13px;color:#000000;line-height:13px;  text-align:center; padding:9px 2px;}
+
+.guideList li { background:url('../images/counsel/bullMore.png') right 2px no-repeat; background-size:7px auto; margin-bottom:15px; }
+.guideList li:last-child { margin-bottom:0; }
+.guideList li a{display:block; width:95%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:14px; color:#000000; line-height:14px;  }
+
+.bbBottom  {border-bottom:1px solid #efefef;}
+.iconList ul li {margin-bottom:25px;}
+.iconList ul li:last-child {margin-bottom:0;}
+.iconList ul li a {font-size:15px; color:#000000; padding:2px 0 2px 32px; font-size:15px;}
+.iconList ul li.no1 a { background:url('../images/counsel/myIco01.png') left center no-repeat; background-size:17px auto;}
+.iconList ul li.no2 a { background:url('../images/counsel/myIco02.png') left center no-repeat; background-size:15px auto;}
+.iconList ul li.no3 a { background:url('../images/counsel/myIco03.png') left center no-repeat; background-size:17px auto;}
+.iconList ul li.no4 a { background:url('../images/counsel/myIco04.png') left center no-repeat; background-size:17px auto;}
+
+.iconList.tp02 ul li.no1 a { background:url('../images/counsel/myIco05.png') left center no-repeat; background-size:16px auto;}
+.iconList.tp02 ul li.no2 a { background:url('../images/counsel/myIco06.png') left center no-repeat; background-size:18px auto;}
+
+.iconList.tp03 ul li.no1 a { background:url('../images/counsel/myIco07.png') left center no-repeat; background-size:18px auto;}
+
+
+.cosultWrap .top {padding:6px 20px; position:relative;}
+.cosultWrap .top:after {content:''; display:block; clear:both;}
+.cosultWrap .top .count {float:left; font-size:13px; color:#2b2b2b; font-weight:500; line-height:13px; padding:6px 0;}
+.cosultWrap .top #select_box{float:right;}
+
+.consultList2 {background:#fff;}
+.consultList2 ul li {border-top:1px solid #dedede; padding:17px 20px; position:relative; }
+.consultList2.tpMb0 ul li .tit {margin-bottom: 0; font-weight: 400; }
+.consultList2 ul li:after {content:''; position:absolute; right:20px; top:50%; margin-top:-5px;  background:url('../images/counsel/bullMore.png') center center no-repeat; background-size:7px auto; width:7px; height:11px;}
+.consultList2 ul li a {display:block;}
+.consultList2 ul li a .tit {font-size:15px; color:#000000; font-weight:500; line-height:15px; margin-bottom:10px;}
+.consultList2 ul li a .info { font-size:13px; color:#6f6f6f;}
+.consultList2 ul li a .info:after {content:''; display:block; clear:both;}
+.consultList2 ul li a .name {float:left;  padding-right:8px; margin-right:8px; background:url('../images/counsel/consultBull.png') right center no-repeat; background-size:1px auto; line-height:13px;  }
+.consultList2 ul li a .date {float:left;  line-height:13px;}
+.consultList2.know ul li:first-child {border-top:none;}
+.consultList2.know ul li a .tit{font-weight:400;}
+
+
+div#select_box {
+    position: relative;
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    border:1px solid #dfdfdf;
+    vertical-align:top;
+    background:#fff
+}
+div#select_box:after {
+    position:absolute; content:''; width:9px; height:6px; right:13px; top:50%; margin-top:-3px;  background:url('../images/counsel/sel_bull.png') 0 center no-repeat; background-size:9px auto;
+}
+div#select_box label {
+    position: absolute;
+    font-size: 12px;
+    color: #262626;
+    top: 5px;
+    left: 6px;
+    line-height:12px;
+}
+div#select_box select#color {
+    width: 100%;
+    height: 24px;
+    min-height: 24px;
+    opacity: 0;
+    position:relative;
+    z-index:1;
+}
+
+.cosultView {background:#fff;}
+.cosultView .top {text-align:center; padding:25px 0}
+.cosultView .top img {width:88px;}
+.cosultView .consultViewList  {padding:0 20px;}
+.cosultView .consultViewList li {border-bottom:1px dashed #dadada; padding:12px 0;}
+.cosultView .consultViewList li:last-child {border:none;}
+.cosultView .consultViewList li:after {content:''; display:block; clear:both;}
+.cosultView .consultViewList li .tit {float:left; font-size:15px; color:#000000; font-weight:500; padding:3px 0 3px 22px; line-height:15px;;}
+.cosultView .consultViewList li .txt {float:right;text-align:right; font-size:15px; color:#3c3c3c; line-height:15px;}
+.cosultView .consultViewList li.no1 .tit {background:url('../images/counsel/consultIco01.png') left center no-repeat; background-size:15px auto;}
+.cosultView .consultViewList li.no2 .tit {background:url('../images/counsel/consultIco02.png') left center no-repeat; background-size:15px auto;}
+.cosultView .consultViewList li.no3 .tit {background:url('../images/counsel/consultIco03.png') left center no-repeat; background-size:15px auto;}
+.cosultView .consultViewList li.no4 .tit {background:url('../images/counsel/consultIco04.png') left center no-repeat; background-size:15px auto;}
+.cosultView .consultViewList li.no5 .tit {background:url('../images/counsel/consultIco05.png') left center no-repeat; background-size:16px auto;}
+.cosultView .consultViewList li.no6 .tit {background:url('../images/counsel/consultIco06.png') left center no-repeat; background-size:16px auto;}
+
+.btnTwo {margin:20px;}
+.btnTwo:after {content:''; display:block; clear:both;}
+.btnTwo a  {width:47%; float:left; margin-left:6%;}
+.btnTwo a:first-child {margin-left:0;}
+
+.consultStep {margin-bottom:10px; background:#fff; padding:15px 0;  }
+.consultStep:after {}
+.consultStep ul {overflow:hidden; position:relative;}
+.consultStep ul:after {position:absolute; content:''; left:10%; top:50%; width:80%; height:3px; background:url('../images/counsel/longDot.png') repeat-x; background-size:5px auto; margin-top:-13px;}
+.consultStep ul li{float:left; width:20%; position:relative; z-index:1;}
+.consultStep ul li:first-child {}
+.consultStep ul li span{display: block; padding-top:48px; font-size:12px; color:#7a7a7a; text-align:center;}
+.consultStep ul li.no1 span{background:url('../images/counsel/pro01.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.no2 span{background:url('../images/counsel/pro02.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.no3 span{background:url('../images/counsel/pro03.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.no4 span{background:url('../images/counsel/pro04.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.no5 span{background:url('../images/counsel/pro05.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.active span{color:#233969; font-weight:500;}
+.consultStep ul li.no1.active span{background:url('../images/counsel/pro01_on.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.no2.active span{background:url('../images/counsel/pro02_on.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.no3.active span{background:url('../images/counsel/pro03_on.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.no4.active span{background:url('../images/counsel/pro04_on.png') center top no-repeat; background-size:40px auto;}
+.consultStep ul li.no5.active span{background:url('../images/counsel/pro05_on.png') center top no-repeat; background-size:40px auto;}
+
+.whiteBox2 {background:#fff; padding:10px 20px;}
+.whiteBox2.bb {border-bottom:1px solid #dbdbdb;}
+.whiteBox2 .tit {font-size:15px; color:#000000; margin-bottom:8px; line-height:15px;}
+.whiteBox2 .tit span.user_name {display:inline-block;padding:4px 6px;margin-right:8px;color:#fff;font-weight:200;background:#233969;border-radius:3px;}
+.whiteBox2 .lastText {font-size:11px; color:#0e0e0e;}
+
+.base02 {width:100%; border-top:1px solid #6a6a6a; margin-bottom:10px;}
+.base02 th {font-weight:400; font-size:13px;color:#4f4646; line-height:13px;; background:#f8f8f8; text-align:center; padding:9px 0; border-right:1px solid #d7d7d7; border-bottom:1px solid #e9e9e9;}
+.base02 td {font-weight:400; font-size:13px;color:#4f4646;line-height:13px;  text-align:center; padding:9px 2px; border-bottom:1px solid #e9e9e9; }
+.base02.tp2 td {background:#fff; border-left:1px solid #e9e9e9; line-height:16px;}
+.base02.tp2 td.left {text-align:left; padding-left:10px;}
+.base02.tp2 .tdTit02 {font-size:11px; color:#4f4646; padding-top:3px;}
+.base02.tp2 .tdTit03 {font-size:11px; color:#4f4646; padding-top:5px;}
+
+
+.site {margin-bottom:10px;}
+.site:after {content:''; display:block; clear:both;}
+.site .left {float:left; }
+.site .left .tit { font-size:13px; color:#000000;}
+.site .left .tit.bold { font-size:15px; font-weight:500;}
+.site .right {float:right; text-align:right;}
+.site .right .blueTit {font-size:15px; color:#0269bf; font-weight:500;}
+.site .right .blueTit.fz18 {font-size:18px; }
+.site .right .tit3 {font-size:15px; color:#000000;}
+.site .right .sm {font-size:12px; color:#636363;}
+
+
+.borderText  {text-align:center; border:2px solid #233969; padding:20px 0; margin-bottom:20px; }
+.borderText .title01 {font-size:15px; color:#000000;}
+.borderText .title01 span{font-size:15px; color:#0269bf; font-weight:500;}
+.borderText .title02 {font-size:13px; color:#5d5d5d; margin-top:10px;}
+
+.m20 {margin:20px;}
+
+.knowView {padding:20px; background:#fff;}
+.knowView .top {margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #f2f2f2;}
+.knowView .top .tit {font-size:18px; color:#000000;  line-height:18px; margin-bottom:10px;}
+.knowView .top .info {font-size:14px; color:#747474; line-height:14px;}
+.knowView .top .info:after {content:''; display:block; clear:both;}
+.knowView .top span {float:left; margin-left:5px; padding-left:5px; background:url('../images/counsel/consultBull.png') left center no-repeat; background-size:1px auto; font-size:13px; line-height:13px; color:#747474;}
+.knowView .top span:first-child {margin-left:0; padding-left:0; background:none;}
+.knowView .cont {font-size:14px; color:#000000; }
+
+
+.faqList ul li { background:#fff; }
+.faqList ul li .qustion a {display: block; font-size:16px; color:#000000;  padding:17px 20px; line-height:16px; position:relative; border-bottom:1px solid #f2f2f2;}
+.faqList ul li .qustion a:after {content:''; position:absolute; right:20px; top:50%; margin-top:-3px;  background:url('../images/counsel/arrowbottom.png') center center no-repeat; background-size:13px auto; width:13px; height:7px;}
+.faqList ul li.on .qustion a:after { background:url('../images/counsel/arrowup.png') center center no-repeat; background-size:13px auto; }
+.faqList ul li .answer {display:none; background:#f5f5f5; padding:20px; font-size:15px; color:#000000; }
+
+
+.personaltext  {padding:20px; font-size:14px; color:#000000; background:#fff;}
+.personaltext .tit {font-weight:600; color:#000000; font-size:15px; margin-bottom:10px;}
+.personaltext .txt {margin-bottom:30px; word-break:keep-all;}
+
+
+.oneQustion .tab { background:#fff; border-bottom:1px solid #d9d9d9;}
+.oneQustion .tab:after {content:''; display:block; clear:both;}
+.oneQustion .tab a {float:left; width:50%; text-align:center; font-size:15px; color:#000000; padding:13px 0; line-height:15px;}
+.oneQustion .tab a.active {border-bottom:2px solid #044ab4;color:#044ab4; }
+.selType01 {margin-bottom:10px;  border:1px solid #c9c9c9;}
+.selType01 #select_box {width:100%; height:44px;  border:none}
+.selType01 #select_box label {top:15px; font-size:15px; line-height:15px; left:13px; color:#000000;}
+.selType01 #select_box select {height:44px;}
+.oneQustion .textZone { border:1px solid #c9c9c9; background:#fff;}
+.oneQustion .textZone textarea { font-size:14px; padding:15px; width:100%; height:300px; border:none; resize:none;}
+
+
+.textArea2 { border:1px solid #c9c9c9; background:#fff;}
+.textArea2 textarea { font-size:14px; padding:15px; width:100%; height:90px; border:none; resize:none;}
+
+.noData {font-size:15px; text-align:center; color:#000000; padding:40px 0;}
+
+.oneQustionList ul li {border-bottom:1px solid #f2f2f2; background:#fff;}
+.oneQustionList ul li a {position: relative; display: block;  padding:17px 20px;}
+.oneQustionList ul li a .left {margin-right:80px;}
+.oneQustionList ul li a .left .tit {font-size:16px; color:#000000; margin-bottom:5px;}
+.oneQustionList ul li a .left .date {font-size:14px; color:#747474;}
+.oneQustionList ul li a .answerNo {position: absolute; right:20px; top:50%; margin-top:-15px; font-size:14px; color:#fff; border-radius:5px; background:#878787; line-height:14px; padding:8px 0; width:75px; text-align:center; }
+.oneQustionList ul li a .answerYes {position: absolute; right:20px; top:50%; margin-top:-15px; font-size:14px; color:#fff; border-radius:5px; background:#0269bf; line-height:14px; padding:8px 0; width:75px; text-align:center;}
+
+
+.oneQustionView .topQus {background:#fff; margin-bottom:10px; padding:20px;}
+.oneQustionView .topAnswer {background:#fff; padding:20px;}
+.oneQustionView .tit {font-size:18px; color:#000000; }
+.oneQustionView .tit span {color:#0269bf;}
+.oneQustionView .date {font-size:14px; color:#747474}
+.oneQustionView .text {font-size:14px; color:#000000; padding-top:20px; margin-top:20px; border-top:1px solid #f2f2f2;}
+
+
+.taxTop {background:#3061ba url('../images/counsel/bgTax.png') center center no-repeat; background-size:cover; padding:30px 0; text-align:center; margin-bottom:10px;}
+.taxTop .tit {font-size:20px; color:#fff; font-weight:500; margin-bottom:20px; line-height:20px;}
+.taxTop .tit2 {font-size:14px; color:#fff;}
+
+.taxMainList ul  {padding:10px;}
+.taxMainList ul li { margin-bottom:10px; padding:15px; background:#fff; }
+.taxMainList ul li a {display: block; position:relative; }
+.taxMainList ul li a:after {content:''; position:absolute; right:0; top:0; height:100%; width:35px; background:#fff url('../images/counsel/bgTax01.png') center center no-repeat; background-size:25px auto; }
+.taxMainList ul li.no2 a:after {background:#fff url('../images/counsel/bgTax02.png') center center no-repeat; background-size:35px auto; }
+.taxMainList ul li.no3 a:after {background:#fff url('../images/counsel/bgTax03.png') center center no-repeat; background-size:28px auto; }
+.taxMainList ul li.no4 a:after {background:#fff url('../images/counsel/bgTax04.png') center center no-repeat; background-size:32px auto; }
+.taxMainList ul li a .tit {font-size:15px; font-weight:500; color:#000000; line-height:15px; margin-bottom:10px; display:block;}
+.taxMainList ul li a .tit2 {font-size:12px;color:#000000;}
+
+.telTab { background:#fff; }
+.telTab ul:after {content:''; display:block; clear:both;}
+.telTab li {float:left; width:25%; text-align:center; font-size:0.8rem; color:#000000; padding:13px 0; line-height:15px; border-bottom:1px solid #d9d9d9;}
+.telTab.three li {width:33.33336%;}
+.telTab li.active {border-bottom:1px solid #044ab4;color:#044ab4; }
+.telTab li.active a {color:#044ab4;}
+.telTab li.helpTab {background:#abacac;cursor: pointer}
+.telTab li.helpTab a {color:#fff;}
+
+.telTab ul.threeTab li {width:33.3%;}
+.telTab ul.fourTab li {width:25%;}
+.telTab ul.fiveTab li {width:20%;}
+
+.hubPop {
+    display: none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:4.0rem 2.0rem 2.0rem;
+    width:96%;
+    max-width:760px;
+    height: auto;
+    max-height: 84%;
+    overflow-y: scroll;
+    background: #fff;
+    z-index: 1000;
+    box-shadow:0px 0px 16px rgba(100,110,110,0.4);
+}
+.hubPop .hubClose {
+    display:block;
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    background:#666;
+    color:#fff;
+    padding:0.4rem;
+    cursor: pointer;
+}
+
+
+.telTit {text-align:center; padding-top:2rem;}
+.telTit .tit01{font-size:20px; color:#000000; font-weight:500; margin-bottom:15px; line-height:20px;}
+.telTit .tit01.big{ line-height:28px;}
+.telTit .tit02{font-size:13px; color:#7a7a7a;  margin-bottom:30px; line-height:13px;}
+.telTit .tit02.lh18{line-height:18px;}
+/* serim :: custom mobile :: kjw :: 2017.11.22 */
+.telTit.seCst .tit02 {margin-bottom:10px;}
+.telTit.seCst .tit03 {font-size:14px; color:#666;  margin-bottom:30px; line-height:14px;}
+
+.telSel {margin-bottom:10px;  border:1px solid #c9c9c9;}
+.telSel #select_box {width:100%; height:44px;  border:none}
+.telSel #select_box select#color {height:44px;}
+.telSel #select_box label {top:15px; font-size:15px; line-height:15px; left:13px; color:#000000;}
+.telSel div#select_box:after {border-left:1px solid #c9c9c9; height:100%;  top:0; right:0; margin-top:0; width:45px; background:url(../images/counsel/arrowbottom.png) center center no-repeat;  background-size: 13px auto;}
+
+/* serim :: custom mobile :: kjw :: 2017.11.22 */
+.telSca .seCst {margin-bottom:10px; font-size:14px;  }
+.telSca .seCst > label {float:left;width:40%;height:44px;line-height:44px;}
+.telSca .seCst.dtBox > label {float:left;width:100%;height:30px;line-height:30px;}
+.telSca .seCst.dtBox > label+label {margin-bottom:12px;}
+.telSca .seCst > label img {vertical-align:middle;width:18px;}
+.telSca .seCst > label img {width:18px;}
+.telSca .seCst #select_box {width:60%; height:44px;border:1px solid #dfdfdf;}
+.telSca .seCst #select_box select#app_time {height:44px;}
+.telSca .seCst #select_box label {top:15px; font-size:15px; line-height:15px; left:13px; color:#000000;}
+.telSca .seCst div#select_box:after {border-left:none; height:100%;  top:0; right:0; margin-top:0; width:45px; background:url(../images/counsel/bullCstBtn.png) center center no-repeat;  background-size: 45px 42px;}
+
+
+
+.bottomFix {position:fixed; left:0; bottom:0; width:100%; }
+
+
+.teslList2 > ul{border-top:1px solid #dbdbdb;  background:#fff;}
+.teslList2 > ul > li{border-bottom:1px solid #dbdbdb;}
+.teslList2 .topInfo {position:relative; padding:15px 20px 13px 15px;}
+.teslList2 .topInfo .selView {margin-left:32px;}
+.topInfo .selView {padding-right:36px;}
+.teslList2 .topInfo .selView:after {content:''; display:block; clear:both;}
+.teslList2 .topInfo .selView .txt { margin-left:57px; position:relative; top:3px}
+.teslList2 .topInfo .selView .txt .tit01 {font-size:15px; color:#000000; line-height:15px; margin-bottom:5px;}
+.teslList2 .topInfo .selView .txt .tit02 {font-size:0.80rem; color:#7a7a7a; line-height:1.6;}
+.teslList2 .topInfo .selView .txt .tit03 {font-size:14px; color:#0269bf; line-height:14px; padding-top:5px;}
+.teslList2 .topInfo .selView .img {float:left; position:relative; top:-3px;}
+/*.teslList2 .topInfo .selView .viewBtn {display:none;position:absolute;top:27px;right:20px;width:23px;height:23px;cursor:pointer;z-index:10;}*/
+/*.teslList2 .topInfo .selView .viewBtn img {width:100%;}*/
+.topInfo .selView .viewBtn {position:absolute;top:26px;right:20px;width:32px;height:25px;line-height:25px;text-align:center;border-radius:4px;cursor:pointer;z-index:10;}
+.topInfo .selView .viewBtn.open {background-color:#f2f2f2;}
+.topInfo .selView .viewBtn.close {background-color:#6aa0d3;}
+.topInfo .selView .viewBtn span {font-size:0.8em;}
+.topInfo .selView .viewBtn.open span {color:#000;}
+.topInfo .selView .viewBtn.close span {color:#fff;}
+.teslList2.tp2 .topInfo .selView .txt { top:0;}
+.teslList2.tp2 .topInfo .selView .img {position:relative; top:5px;}
+.teslList2 .topInfo .selView .img img{width:45px;height:45px;border-radius:50%}
+.teslList2 .topInfo .btn {position:absolute; position:absolute; left:20px; top:50%; margin-top:-12px; overflow:hidden;}
+.teslList2 .topInfo .btn input{position:absolute; left:-9999em; width:1px; height:1px;}
+.teslList2 .topInfo .btn label {display:block; font-size:0;text-indent:-9999px; color:#233969; width:18px; height:18px; line-height:25px;text-align:center;background:url('../images/counsel/option_off.jpg');background-size:contain;}
+.teslList2 .topInfo .btn input:checked + label {background:url('../images/counsel/option2_on.jpg');background-size:contain;}
+.teslList2 .viewInfo {background:#f6f6f6; display:none; margin:10px 20px; }
+.teslList2 .viewInfo .in > ul > li {border-bottom:1px solid #efeeee; padding:15px;}
+.teslList2 .viewInfo .in > ul > li:after {content:''; display:block; clear:both;}
+.teslList2 .viewInfo .in > ul > li .tit {float:left; font-size:13px; color:#0269bf; line-height:13px; padding-left:20px;}
+.teslList2 .viewInfo .in > ul > li .tit.no1 {background:url('../images/counsel/bgTax07.png') left center no-repeat; background-size:15px auto;}
+.teslList2 .viewInfo .in > ul > li .tit.no2 {background:url('../images/counsel/bgTax08.png') left center no-repeat; background-size:12px auto;}
+.teslList2 .viewInfo .in > ul > li .tit.no3 {background:url('../images/counsel/bgTax09.png') left center no-repeat; background-size:13px auto;}
+
+.teslList2 .viewInfo .in > ul > li .tit.no4 {background:url('../images/counsel/bgTax015.png') left center no-repeat; background-size:12px auto;}
+.teslList2 .viewInfo .in > ul > li .tit.no5 {background:url('../images/counsel/bgTax016.png') left center no-repeat; background-size:13px auto;}
+
+.teslList2 .viewInfo .in > ul > li .text {margin-left:80px; }
+.teslList2 .viewInfo .in > ul > li .text li {line-height:13px; font-size:13px; color:#7a7a7a; margin-bottom:10px;}
+
+.teslList3 > ul{border-top:1px solid #dbdbdb;  background:#fff;}
+.teslList3 > ul > li{border-bottom:1px solid #dbdbdb;}
+.teslList3 .topInfo {position:relative; padding:15px 20px 13px 20px;}
+.teslList3 .topInfo .selView {margin-right:65px;}
+.teslList3 .topInfo .selView:after {content:''; display:block; clear:both;}
+.teslList3 .topInfo .selView .txt { margin-left:47px; position:relative; top:3px}
+.teslList3 .topInfo .selView .txt .tit01 {font-size:15px; color:#000000; line-height:15px; margin-bottom:5px;}
+.teslList3 .topInfo .selView .txt .tit02 {font-size:14px; color:#7a7a7a; line-height:14px;}
+.teslList3 .topInfo .selView .img {float:left; position:relative; top:2px; }
+.teslList3 .topInfo .selView .img img{width:35px;}
+.teslList3 .topInfo .btn {position:absolute; position:absolute; right:20px; top:50%; margin-top:-12px; overflow:hidden;}
+.teslList3 .topInfo .btn input{position:absolute; left:-9999em; width:1px; height:1px;}
+.teslList3 .topInfo .btn label {display:block; font-size:14px; color:#233969; width:50px; height:25px; line-height:25px; border:1px solid #233969; text-align:center; }
+.teslList3 .topInfo .btn input:checked + label {color:#fff; background:#233969; }
+
+.teslList3.callList {
+}
+.teslList3.callList .topInfo .selView {
+    margin-right:0;
+}
+.teslList3.callList .topInfo .selView {
+    padding-right:0;
+}
+.teslList3.callList .topInfo .selView .img img {
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+}
+.teslList3.callList .topInfo .selView .txt {
+    margin-left:4rem;
+}
+.teslList3.callList .topInfo .selView .txt .tit01 {
+    /*line-height:4rem;*/
+    /*padding-top:0.75rem;*/
+    line-height:1.4;
+}
+.teslList3.callList .topInfo .selView .txt tag,
+tag{
+    display:inline-block;
+    padding:2px 6px;
+    margin-bottom:4px;
+    margin-right:0.5rem;
+    height:1.6rem;
+    line-height:1.4rem;
+    border:1px solid #316ca6;
+    background:#316ca6;
+    color:#fff;
+    font-weight:600;
+}
+tag {
+    margin:0;
+}
+tag.gray_tag {
+    background: #afafaf;
+    border:1px solid #afafaf;
+}
+tag.gray_tag {
+	margin-right:0.25rem;
+	padding:0 0.5rem;
+	height: 1.375rem;
+	line-height:1.375rem;
+	font-size:0.675rem;
+	background-color:#f2f2f2;
+	border:1px solid #f2f2f2;
+	color:#8c8c8c;
+}
+tag.category_tag {
+	margin-top:0.375rem;
+	padding:0.125rem 0.5rem;
+	background-color:#a2a2a2;
+	border:1px solid #a2a2a2;
+	color:#fff;
+	font-weight:600;
+}
+.teslList3.callList .topInfo .selView .txt i {
+    position: absolute;
+    top:0.25rem;
+    right:0rem;
+    width:2.3rem;
+    height:2.3rem;
+    padding:0.5rem;
+    border:1px solid #316ca6;
+    font-size:1.4rem;
+    color:#316ca6;
+    background:#fff;
+    border-radius:50%;
+}
+.teslList3.callList .topInfo .selView .txt b {
+    text-decoration: underline;
+}
+.goHome {
+    display:block;
+    margin:1rem auto 0;
+    width:10rem;
+    height:2.5rem;
+    line-height:2.5rem;
+    text-align:center;
+    background:#fff;
+    border:1px solid #ddd;
+    font-size:1.0rem;
+}
+
+.telSca {margin:20px;}
+.telSca .line {margin-bottom:10px; border:1px solid #c9c9c9;}
+.telSca .line input {font-size:15px;}
+.telSca .line.ipBox {position:relative;}
+.telSca .line.ipBox button {display:block; position:absolute;right:10px; top:10px; text-indent:-999em; border:none;  width:16px; height:19px; background:url('../images/counsel/bgTax13.png') no-repeat; background-size:16px auto;}
+.telSca .line #select_box label {color:#949494; font-size:14px;  font-weight:400;}
+/* serim :: custom mobile :: kjw :: 2017.11.22 */
+.telSca .line.seCst {border:none;}
+.telSca .line.seCst input {z-index:1;position:absolute;top:0;left:40%;height:42px;width:60%;background:url(../images/counsel/bullCstBtn.png) center right no-repeat;  background-size: 45px 42px;}
+.telSca .line.seCst span div.seCstBg {z-index:0;position:absolute;top:0;left:40%;height:42px;width:60%;background:#fff;}
+.telSca .line #select_box span {position:absolute;top:13px;left:10px;line-height:15px;color:#949494; font-size:14px;  font-weight:400;}
+/* =========================================== */
+
+.telSca .textZone {background:#fff; }
+.telSca .textZone textarea { font-size:14px; padding:15px; width:100%; height:150px; border:none; resize:none;}
+
+.telSca .userInfoZone {
+    margin:0 auto 0.5rem;
+    padding:1rem;
+    width:100%;
+    background: #fff;
+    border:1px solid #ddd;
+}
+.telSca .userInfoZone p {
+    margin:0.25rem auto;
+    line-height:2;
+}
+.telSca .userInfoZone p.infoTitle {
+    font-weight:600;
+    margin-bottom:0.5rem;
+}
+.telSca .userInfoZone p span.infoTt {
+    display: inline-block;
+    width:48px;
+}
+.telSca .userInfoZone p input {
+    padding:0.25rem;
+    border:1px solid #eee;
+}
+.telSca.mailList .whiteBox2 {
+    margin:0;
+}
+
+.base04 {width:100%;}
+.base04 th {font-weight:400; font-size:13px;color:#fff; line-height:13px;; background:#5b5b5b; text-align:center; padding:9px 0; border-left:1px solid #fff;}
+.base04 th:first-child {border-left:none;}
+.base04 td {font-weight:400; font-size:13px;color:#000000;line-height:13px;  text-align:center; padding:9px 2px; background:#fff; border-bottom:1px solid #e4e4e4;}
+
+
+.base03 {width:100%;}
+.base03 th {font-weight:500; font-size:0.84rem;color:#000000; line-height:1.5; padding:7px 0 7px 5px; background:url('../images/counsel/consultBull2.png') left center no-repeat; background-size:3px auto; }
+.base03 th.cst-serim_ltm1 {letter-spacing:-1px;}
+.base03 th.cst-serim_ltm2 {letter-spacing:-2px;}
+@media screen and (max-width: 360px){
+
+}
+.base03 th.thp {padding-top:20px; background:url('../images/counsel/consultBull2.png') left 25px no-repeat; background-size:3px auto; }
+.base03 td {font-weight:400; font-size:0.84rem;color:#000000;line-height:1.5;   padding:3px 0 3px 6px; height:40px;}
+.base03 td input[type=text] {width:100%; border:1px solid #dbdbdb; height:30px; line-height:30px; padding-left:6px;  font-size:15px;color:#000000;}
+.base03 td p{display:inline-block;}
+.base03 input[type=radio], .base03 input[type=checkbox] {display:none;}
+.base03 input[type=radio] + label,
+.base03 input[type=checkbox] + label {display:inline-block;margin:0;vertical-align:middle;margin-right:10px;}
+.base03 input[type=radio] + label::before,
+.base03 input[type=checkbox] + label::before {content:"";display:inline-block;width:18px;height:18px;margin-right:5px;background: url('../images/counsel/option_off.jpg');background-size:contain;vertical-align: middle;}
+.base03 input[type=radio]:checked + label::before,
+.base03 input[type=checkbox]:checked + label::before{background: url('../images/counsel/option_on.jpg');background-size:contain;}
+
+.btnThree {}
+.btnThree:after {content:''; display:block; clear:both;}
+.btnThree a  {width:31%; float:left; margin-left:3.5%;}
+.btnThree a:first-child {margin-left:0;}
+
+.docuTit {font-size:15px; color:#000000; margin-bottom:10px;}
+
+
+.popArea {display:none; position:fixed; left:0; top:0; height:100%; width:100%; z-index:300;}
+.popArea .bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; background:rgba(0,0,0,.5);}
+.popArea .popIn {position:fixed; left:0; top:30%;  width:100%; z-index:2;}
+.popArea .popIn .box {margin:0 20px; background:#fff; border-top-left-radius:10px;  border-top-right-radius:10px; overflow:hidden;}
+.popArea .popIn .box .txt {text-align:center; font-size:15px; color:#2a2a2a;  padding:20px 0;}
+.popArea .popIn .box .txt .tit { font-weight:500; margin-bottom:10px;}
+.popArea .popIn .box .txt a{ color:#0269bf;}
+.popArea .popIn .box .txt span{ color:#0269bf;}
+.popArea .popIn .box .txt span.bold{font-weight:600;}
+.popArea .popIn .box .btn:after {content:''; display:block; clear:both;}
+.popArea .popIn .box .btn a{float:left; width:50%; text-align:center; color:#fff; font-weight:500; font-size:15px; padding:15px 0; background:#0269bf; line-height:15px;}
+.popArea .popIn .box .btn a:first-child {border-right:1px solid #00549b}
+
+/*서류상담*/
+.option li{background:#fff;}
+.option li.cst-se-hdMn.none {display:none;}
+.option li.cst-se-hdMn.block {display:block;}
+.option li button{width:100%;background:none;border:none;font-size:0.84rem;height:56.5px;line-height:56.5px;border-top:1px solid #f2f2f2;text-align:left;position:relative;padding-left:45px;}
+.option li button::before{content:"";display:block;width:18px;height:18px;position:absolute;top: 19px;left: 17px;background:url('../images/counsel/option_off.jpg') no-repeat;background-size:contain;}
+.option li.on button{background:#f3f9fe}
+.option li.on  button::before{background:url('../images/counsel/option_on.jpg') no-repeat;background-size:contain;}
+
+/*기장상담*/
+.se_cst_hdn {display:none;}
+
+/*회원가입 필수항목 아이콘*/
+.ipBox span.title.must::before{content:"";display:inline-block;width:9px;height:9px;background:url('../images/counsel/mustIcon.png') no-repeat;margin-right:2px;}
+
+/*상담예약 2단계 버튼추가*/
+.selectBtns{text-align:center;margin:0 3.125%;font-size:0;margin-bottom:30px;}
+.selectBtns>div{font-size:14px;color:#575757;background:#fff;margin:0;width:33.3%;height:68px; display:none;}
+.selectBtns>div.on {display:inline-block;}
+.selectBtns >div input{    position: absolute;left: -9999em;width: 1px; height: 1px;}
+.selectBtns >div label{display: block;font-size: 0; text-indent: -9999px; color: #233969;width:100%;height:100%;}
+.selectBtns >div label.call{background:url('../images/counsel/csCallBtn.jpg') no-repeat 50%; background-size:contain;border: 1px solid #e1e1e1;}
+.selectBtns >div label.mail{background:url('../images/counsel/csMailBtn.jpg') no-repeat 50%; background-size:contain;border: 1px solid #e1e1e1;}
+.selectBtns >div label.visit{background:url('../images/counsel/csVisitBtn.jpg') no-repeat 50%;background-size:contain;border: 1px solid #e1e1e1;}
+.selectBtns >div input:checked + label.call{background:url('../images/counsel/csCallBtn_on.jpg') no-repeat 50%; background-size:contain;border: 1px solid #044ab4;}
+.selectBtns >div input:checked + label.mail{background:url('../images/counsel/csMailBtn_on.jpg') no-repeat 50%; background-size:contain;border: 1px solid #044ab4;}
+.selectBtns >div input:checked + label.visit{background:url('../images/counsel/csVisitBtn_on.jpg') no-repeat 50%; background-size:contain;border: 1px solid #044ab4;}
+
+/*신고의뢰 3단계 table 추가*/
+.tableLsit{border:1px solid #c9c9c9;border-bottom:none;}
+.tableLsit li{border-bottom:1px solid #c9c9c9;    padding-left: 10px;line-height: 30px;}
+.base03 .textZone textarea{width:100%;height:100px;}
+.base03 .selected{background:#f6f6f6;display:none}
+.base03 .selected.on{    display: table-row;}
+.base03 .selected td{padding-left:10px}
+.base03 .selected .tit{    float: left; font-size: 13px; color: #0269bf; line-height: 13px;padding-left: 20px;}
+.base03 .selected .tit.no4{  background: url(../images/counsel/bgTax015.png) left center no-repeat;background-size: 12px auto;}
+.base03 .selected .tit.no5{    background: url(../images/counsel/bgTax016.png) left center no-repeat; background-size: 13px auto}
+
+.base03 .selected .text{    margin-left: 80px;color:#7a7a7a;font-size:13px;}
+
+
+/*보수결제*/
+.payCont{margin-top:10px;background:#fff;padding: 0 20px;display:none;}
+.payCont table{width:100%;font-size:15px;}
+.payCont table th{padding:10px 0;font-weight:normal;}
+.payCont table th span{display:block;color:#636363;font-size:12px;}
+.payCont table td{text-align:right;}
+.payCont table td input{width:73px;border:1px solid #ddd;}
+.payCont table td span{display:inline-block;}
+
+
+.bankInfo{font-size:13px;padding:5% 3.125%;background:#fff;}
+.bankInfo p.title{font-size:15px;padding-left:0;margin-bottom:10px;}
+.bankInfo p{line-height:19px;color:#222;padding-left:6px;}
+.bankInfo p.title::before{content:"";display:inline-block;width:4px;height:4px;vertical-align:middle;background:#233969;margin-right:2px}
+@media(max-width:345px){
+    .ipBox span.title{font-size:13px;}
+    .ipBox input{font-size:13px;}
+}
+
+/*업무보수계산*/
+#se_calc {position:relative;padding:80px 20px 20px;}
+#se_calc > div {clear:both;position:relative;margin-bottom:10px;width:100%;min-height:40px;line-height:40px;font-size:1.2em;}
+#se_calc > div > label {float:left;position:relative;display:inline-block;width:35%;}
+#se_calc > div > label:before {content:'■ ';color:#233969;}
+#se_calc > div > label + div {float:right;position:relative;display:inline-block;width:64%;}
+#se_calc > div > label + div > select,
+#se_calc > div > label + div > input[type=text] {vertical-align:top;padding-left:10px;padding-right:30px;width:100%;height:38px;border:1px solid #ddd;background:#fff;font-size:1.0em;color:#444;}
+#se_calc > div > label + div > input+span {position:absolute;top:0px;right:10px;color:#666;}
+#se_calc > div#cst-se_sale > p {clear:both;height:25px;line-height:25px;text-align:center;}
+
+#se_calc button {display:block;margin-top:20px;padding:10px 0;width:100%;line-height:16px;
+    cursor:pointer;
+    text-align:center;color:#fff;font-size:1.1em;
+    border-radius: 10px;background:#233969;
+    -webkit-border-radius: 10px;
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+}
+#se_calc #cst-se_ref {transition:all 0.8s;background-color:#aaa;}
+#se_calc #cst-se_ref.off {display:none;}
+#se_calc #cst-se_ref.on {display:block;}
+#se_calc #cst-se_result {transition:all 0.5s;margin-top:20px;padding:10px 15px;border:1px dotted #aaa;border-radius:5px;background-color:#fff;}
+#se_calc #cst-se_result.off {display:none;}
+#se_calc #cst-se_result.on {display:block;}
+#se_calc #cst-se_result strong {display:inline-block;width:80px;}
+#se_calc #cst-se_result span {transition:all 0.5s;display:inline-block;}
+#se_calc #cst-se_result p {display:none;padding-top:8px;padding-bottom:8px;font-size:0.9em;line-height:1.5em;text-align:left;color:#888;}
+
+/*계산기*/
+#se_calc.myTax {padding:55px 15px 80px 15px;}
+#se_calc.myTax article {margin-bottom:10px;width:100%;height:25px;line-height:25px;text-align:center;font-size:1.1em;color:#fff;background:#233969;}
+#se_calc.myTax .cst-se_cate {margin-top:28px;margin-bottom:0;padding:4px 0 10px 10px;line-height:28px;background: url(../images/counsel/bull_blue.png) left top no-repeat;}
+#se_calc.myTax .cst-se_cate span {display:inline-block;font-size:1.20em;font-weight:bold;color:#233969;}
+#se_calc.myTax > div {clear:both;position:relative;margin-bottom:8px;width:100%;min-height:36px;line-height:36px;font-size:1.0em;}
+#se_calc.myTax > div.bdgray {margin-bottom:4px;padding-bottom:4px;border-bottom:2px solid #dedede;}
+#se_calc.myTax > div.bdgray:after {content:'';display:block;clear:both;}
+#se_calc.myTax > div.mtSelect {min-height:32px;line-height:normal;}
+#se_calc.myTax > div.hidden {display:none;}
+#se_calc.myTax > div > label {float:left;display:inline-block;width:40%;}
+#se_calc.myTax > div > label b {color:#233969;font-weight:600;}
+#se_calc.myTax.mt04 > div > label:before,
+#se_calc.myTax.mt05 > div > label:before,
+#se_calc.myTax.mt06 > div > label:before {content:'';}
+#se_calc.myTax > div.pb8px > label > span {display:block;padding-left:10px;line-height:26px;}
+#se_calc.myTax > div.pb8px > label > span:before {content:' ';color:#233969;}
+#se_calc.myTax > div.pb8px > label + div {padding-bottom:8px;}
+#se_calc.myTax > div.pb8px > label + div > input+span.scdWon {top:34px;}
+#se_calc.myTax > div > label.ltm1 {letter-spacing:-1px;}
+#se_calc.myTax > div.mtSelect > label {line-height:36px;}
+#se_calc.myTax > div > label + div {float:right;position:relative;display:inline-block;width:59%;}
+#se_calc.myTax > div.mtSelect > div {padding-bottom:5px;line-height:2.2em;}
+#se_calc.myTax > div > section {display:none;clear:both;padding-top:12px;margin-left:3%;width:97%;height:auto;min-height:40px;}
+#se_calc.myTax > div > section.ptzero {padding-top:0px;}
+#se_calc.myTax > div > section > div {padding:5px 10px;width:100%;height:auto;line-height:1.6em;min-height:40px;
+    background:#fafafa;border-radius:5px;border:1px dotted #ddd;box-shadow:3px 3px 5px rgba(0,0,0,0.1);
+    font-size:0.9em;color:#666;
+}
+#se_calc.myTax > div > section > div > table {margin-top:5px;width:100%;}
+#se_calc.myTax > div > section > div > table th {background:#233969;color:#fff;text-align:center;font-weight:normal;border:1px solid #eee;}
+#se_calc.myTax > div > section > div > table td {text-align:center;border:1px solid #eee;}
+#se_calc.myTax > div > label + div > select,
+#se_calc.myTax > div > label + div > input[type=text] {height:34px;text-align:right;}
+#se_calc.myTax > div > label + div > input[type=text]:read-only {background-color:#eee;}
+#se_calc.myTax > div > label + div > label > input[type=text],
+#se_calc.myTax > div > label + div > label > input[type=number] {width:28px;height:28px;text-align:right;
+    padding-left:4px;
+    padding-right:6px;
+    border:1px solid #ddd;
+    background:#fff;
+    font-size:1.0em;
+    color:#444;
+}
+#se_calc.myTax > div > label + div .lh20 {line-height:20px;margin-bottom:8px;}
+#se_calc.myTax > div > label + div .lh24  {line-height:28px;}
+#se_calc.myTax > div > label + div .lh24 input[type=text].selim-date {
+    width:60%;
+    display:inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 28px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 1.0em;
+    color: #444;
+}
+#se_calc.myTax > div > label + div.lh24 {margin-bottom:8px;}
+#se_calc.myTax > div > label + div > input+span {top:-1px;}
+#se_calc.myTax .qt-mark {position:absolute;top:30px;left:10px;width:80px;height:14px;line-height:14px;}
+#se_calc.myTax .pb8px .qt-mark {top:59px;}
+#se_calc.myTax .qt-mark.poRel {position:relative;top:0;left:0;display:inline-block;margin-left:5px;}
+/*#se_calc.myTax .mtSelect .qt-mark {top:87px;}*/
+#se_calc.myTax .qt-mark span {display:inline-block;width:14px;height:14px;line-height:12px;
+    border-radius:5px;background:#fff;border:1px solid #eee;text-align:center;z-index:100;box-shadow:2px 2px 4px rgba(0,0,0,0.1);color:#666;
+}
+#se_calc.myTax .qt-mark strong {font-weight:normal;font-size:0.9em;color:#888;line-height:14px;letter-spacing:0;}
+#se_calc.myTax #cst-se_result {margin-top:10px;}
+#se_calc.myTax #cst-se_list {background:#aaa;margin-top:10px;margin-bottom:20px;}
+#se_calc.myTax #cst-se_list a {display:block;width:100%;height:inherit;cursor:pointer;color:#fff;}
+#se_calc.myTax #cst-se_list.off {display:none;}
+#selim-alert {position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10;}
+#selim-alert > div {position:absolute;top:40%;left:50%;margin-left:-36%;padding-top:13px;line-height:26px;width:72%;height:80px;
+    background:#fff;border-radius:5px;box-shadow:5px 5px 8px rgba(0,0,0,0.6);text-align:center;
+}
+#selim-alert > div button {padding:3px 10px;cursor:pointer;background:#233969;border:1px solid #233950;border-radius:4px;color:#fff;}
+
+/*계산기 목록*/
+#se_calc.mtList ul {margin:20px auto;width:84%;height:auto;}
+#se_calc.mtList ul li {float:left;margin:0px 8% 24px 0px;width:28%;}
+#se_calc.mtList ul li.enter {margin-right:0px;}
+#se_calc.mtList ul li a {cursor:pointer;}
+#se_calc.mtList ul li div {border:2px solid #e1e1e1;background:#eee;padding:22px 5px;text-align:center;border-radius:10px;}
+#se_calc.mtList ul li div img {width:50%;}
+#se_calc.mtList ul li p {padding-top:5px;text-align:center;}
+#se_calc.mtList ul:after {content:'';display:block;clear:both;}
+
+#se_calc.mtList ul.custom {padding-top:20px;border-top:2px solid #ccc;}
+
+/* 모바일-아이프레임 PC */
+#selim-iframe {
+    margin-top:44px;width:100%;
+    background:#fff;
+}
+#selim-iframe body {width:100%;}
+
+/* calculate */
+.subContainer.calculate .calc-tit {padding:8px 0px;text-align:center;}
+.subContainer.calculate .calc-tit .arrow {display:inline-block;width:20px;height:20px;border-radius:10px;background:#aaa;color:#fff;text-align:center;line-height:20px;}
+.subContainer.calculate section.calc-sec {margin:0px 6px 16px 6px;padding:8px 12px;border-radius:3px;border:1px solid #ddd;background:#fff;box-shadow:0px 3px 5px rgba(180,180,180,0.2);}
+.subContainer.calculate section.calc-sec div.row {padding:6px 0px;}
+.subContainer.calculate section.calc-sec div.row.brdt {border-top:1px solid #ddd;}
+.subContainer.calculate section.calc-sec div.row.brdb {border-bottom:1px solid #ddd;}
+.subContainer.calculate section.calc-sec div.column {line-height:34px;}
+.subContainer.calculate section.calc-sec div.column.info,
+.view-area section.view-content div.column.info {
+    display:none;
+    margin-top:6px;padding:5px 10px;line-height:24px;
+    background:#fff;border-radius:3px;border:1px dotted #ddd;
+    -webkit-box-shadow:inset 0px 0px 12px rgba(100,100,100,.2);
+    box-shadow:inset 0px 0px 12px rgba(100,100,100,.2);
+}
+section.calc-sec div.column.info table {margin:5px 0 5px;width:100%;}
+section.calc-sec div.column.info table th {background:#233969;color:#fff;text-align:center;font-weight:normal;border:1px solid #eee;}
+section.calc-sec div.column.info table td {text-align:center;border:1px solid #eee;}
+.subContainer.calculate .column label {}
+.subContainer.calculate .column label:after {content:'';clear:both;display:block;}
+.subContainer.calculate .column label aside.left {position:relative;float:left;width:45%;}
+.subContainer.calculate .column label aside.left i {position:absolute;right:5px;line-height:inherit;font-size:1.2rem;color:#aaa;cursor:pointer;}
+.subContainer.calculate .column label aside.right {float:right;position:relative;width:55%;}
+.subContainer.calculate .column input[type=tel],
+.subContainer.calculate .column input[type=text] {padding:0 20px 0 8px;width:100%;height:34px;vertical-align:top;text-align:right;color:#999;
+    background:#fff;border: 1px solid #ccc;border-radius:3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.subContainer.calculate .column input:read-only {background-color: #f1f1f1;}
+.subContainer.calculate .column label aside.right .money {position:absolute;top:0px;right:6px;line-height:34px;color:#666;}
+.subContainer.calculate .column label aside.right .before {position:relative;}
+.subContainer.calculate .column label aside.right .before input[type=text] {width:70%;border-radius:3px 0px 0px 3px;}
+.subContainer.calculate .column label aside.right .before .money {margin-right:30%;}
+.subContainer.calculate .column label aside.right .before button {display:block;position:absolute;top:0;right:0;width:30%;line-height:34px;border:none;background:none;}
+.subContainer.calculate .column label aside.right .before button a {display:block;line-height:32px;text-align:center;border:1px solid #999;border-left:none;border-radius:0px 3px 3px 0px;background:#999;color:#fff;}
+.subContainer.calculate .column label aside.right .after {display:none;}
+.subContainer.calculate .btnCenter {padding-bottom:10px;}
+.subContainer.calculate .btnCenter button.btnBlue {float:left;margin-left:5%;width:42%;}
+.subContainer.calculate .btnCenter button.btnGray {float:right;margin-right:5%;width:42%;}
+.subContainer.calculate .btnCenter:after {content:'';display:block;clear:both;}
+.subContainer.rsorder .btnCenter.seCst a.btnBlue.btnHome {float:none;width:42%;}
+
+.view-area {display:none;position:relative;margin-top:44px;padding-bottom:55px;width:100%;}
+.view-area .view-tit .arrow {display:inline-block;width:20px;height:20px;border-radius:10px;background:#aaa;color:#fff;text-align:center;line-height:20px;}
+.view-area section.view-content {margin:0px 6px 0px 6px;padding:8px 12px;border-radius:3px;border:1px solid #ddd;background:#fff;box-shadow:0px 3px 5px rgba(180,180,180,0.2);}
+.view-area section.view-content div.row {padding:6px 0px;}
+.view-area section.view-content div.column {line-height:34px;}
+.view-area .column label:after {content:'';clear:both;display:block;}
+.view-area .column label aside.left {position:relative;float:left;width:45%;}
+.view-area .column label aside.left i {position:absolute;right:5px;line-height:inherit;font-size:1.2rem;color:#aaa;cursor:pointer;}
+.view-area .column label aside.right {float:right;position:relative;width:55%;}
+.view-area .column label aside.right label {display:inline-block;}
+.view-area .column aside.right > input[type=tel], .view-area .column aside.right > input[type=text] {
+    padding:0 20px 0 8px;width:100%;height:34px;vertical-align:top;text-align:right;color:#999;
+    background:#fff;border: 1px solid #ccc;border-radius:3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.view-area .column aside.right label > input[type=tel], .view-area .column aside.right label > input[type=text]{
+    padding:0 8px 0 8px;width:40px;height:24px;vertical-align:middle;text-align:right;
+    border: 1px solid #ccc;border-radius:3px;
+}
+.view-area .column aside.right label span {display:inline-block;width:80px;}
+.view-area .column aside.right label span.fullSpan {width:inherit;}
+.view-area .column aside.right label span.fullSpan.lsm2 {letter-spacing:-2px;}
+.view-area .column aside.right > input:read-only {background-color: #f1f1f1;}
+.view-area .column label aside.right .ip-inner {position:absolute;top:0px;right:6px;line-height:34px;color:#666;}
+.view-area .btnCenter {padding:10px;}
+.view-area .btnCenter button+button {margin-left:4px;}
+.view-area .btnCenter button.emphasis {float:right;margin:0;}
+.view-area .btnCenter button a {padding-left:16px;padding-right:16px;}
+.view-area .btnCenter:after {content:'';display:block;clear:both;}
+
+.detail-area {}
+.detail-area section {display:none;}
+.result-area {}
+.result-area .result-tit, .detail-area .detail-tit {padding:8px 0px;text-align:center;}
+
+.deepPopBg {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9000;
+}
+.goTalkPop {
+    display: none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0rem 0rem 1rem;
+    width:100%;
+    max-width:480px;
+    background: #fff;
+    border:1px solid #eee;
+    border-radius:1rem;
+    z-index: 9999;
+    overflow: hidden;
+    box-shadow: 2px 2px 14px rgba(0,0,0,0.2);
+}
+.goTalkPop h1 {
+    height:2.4rem;
+    line-height:2.4rem;
+    background: #316ca6;
+    color:#fff;
+    font-weight: 600;
+    text-align: center;
+}
+.goTalkPop .gtp-wrap {
+    padding:1rem 2rem;
+}
+.goTalkPop .gtp-wrap p {
+    margin-bottom:0.5rem;
+    line-height:1.6;
+    font-size:0.88rem;
+}
+.goTalkPop .gtp-wrap p strong {
+    display: inline-block;
+    width:80px;
+}
+.goTalkPop .gtp-wrap p input {
+    display: inline-block;
+    padding:0.25rem;
+    border:1px solid #ccc;
+}
+.goTalkPop .gtp-btn-wrap {
+    padding:0rem 2rem;
+    text-align: center;
+}
+.goTalkPop .gtp-btn-wrap .gtp-btn {
+    margin:0 0.1rem;
+    width:80px;
+    border:none;
+}
+.goTalkPop .gtp-btn-wrap .gtp-btn a {
+    display: block;
+    padding:0.6rem 0;
+    font-size:0.88rem;
+    transition: all 0.4s;
+    background: #316ca6;
+    color:#fff;
+}
+.goTalkPop .gtp-btn-wrap .gtp-btn.cancel-btn a {
+    background:#888;
+}
+.goTalkPop .gtp-btn-wrap .gtp-btn a:hover {
+    background: #12417a;
+}
+.goTalkPop .gtp-btn-wrap .gtp-btn.cancel-btn a:hover {
+    background: #aaa;
+}
+
+@media only screen and (min-width: 1024px) {
+    .colBox3 {
+        padding:2rem 5rem;
+    }
+    .telTab li {
+        padding:0;
+        font-size:1.0rem;
+        font-weight:600;
+    }
+    .telTab li a {
+        display: block;
+        padding: 1.0rem 0;
+        line-height: 15px;
+        cursor: pointer;
+    }
+    .option li button {
+        font-size:0.96rem;
+    }
+    .teslList2 {
+        padding:0 5rem 2rem;
+    }
+    .teslList2 .topInfo .selView .img img {
+        width:4rem;
+        height:4rem;
+    }
+    .teslList2 .topInfo .selView .txt {
+        margin-left:5rem;
+        padding-top:0.5rem;
+    }
+    .teslList2 .topInfo .selView .txt .tit01 {
+        font-size:1.0rem;
+    }
+    .teslList2 .topInfo .selView .txt .tit02 {
+        font-size:0.88rem;
+    }
+    .topInfo .selView .viewBtn {
+        top:32px;
+        width:2.25rem;
+        height:1.50rem;
+        line-height:1.50rem;
+        font-size:0.88rem;
+    }
+    .teslList3 {
+        padding:0 5rem 2rem;
+    }
+    .telSca {
+        margin:0;
+        padding:0rem 5rem 2rem;
+    }
+    .teslList3.callList .topInfo .selView .img img {
+        width:4rem;
+        height:4rem;
+        border-radius: 50%;
+    }
+    .teslList3.callList .topInfo .selView .txt {
+        margin-left:5.2rem;
+    }
+    .teslList3.callList .topInfo .selView .txt .tit01 {
+        /*line-height:4rem;*/
+        padding-top:0.75rem;
+    }
+    .teslList3.callList .topInfo .selView .txt span {
+        display:inline-block;
+        margin-right:0.5rem;
+    }
+    .teslList3.callList .topInfo .selView .txt tag {
+        display:inline-block;
+        padding:4px 6px;
+        margin-right:0.5rem;
+        height:2rem;
+        line-height:1.6;
+        border:1px solid #316ca6;
+        background:#316ca6;
+        color:#fff;
+        font-weight:600;
+    }
+    .teslList3.callList .topInfo .selView .txt i {
+        position: absolute;
+        top:0rem;
+        right:0rem;
+        width:2.8rem;
+        height:2.8rem;
+        font-size:1.8rem;
+        color:#316ca6;
+    }
+    .teslList3.callList .topInfo .selView .txt b {
+        text-decoration: underline;
+    }
+    .actMb {
+        display:none;
+    }
+    .pcNo {
+        display:none;
+    }
+    .whiteBox2 {
+        margin:0 5rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .actMb {
+        display:block;
+    }
+    .goTalkPop {
+        width:94%;
+    }
+    .goTalkPop .gtp-wrap {
+        padding:1rem 1.5rem;
+    }
+    #csl_login_form .csl_lform_hd {
+        font-size:0.875rem;
+    }
+
+}

@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* sub title */
+.sub_title {
+	position: relative;
+    height: 300px;
+    background: #d9eaf9 url(../images/sub_title.png) no-repeat 3% top;
+}
+
+.sub_title>.content_wrap {
+    position: relative;
+    background: url(../images/sub_img.png) no-repeat 90% bottom;
+    overflow: visible;
+}
+
+.sub_title p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    font-weight: 300;
+	color: #222 !important;
+	line-height: 1.6;
+}
+
+/*.sub_title .content_wrap .sub_text {font-size: 32px; line-height: 1.6;}*/
+
+
+
+/* sub_nav */
+.subNav_wrap {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.subNav_wrap .sub_nav {
+    max-width: 1180px;
+    margin: 25px auto;
+    padding-bottom: 1px;
+    overflow: hidden;
+}
+
+.subNav_wrap .sub_nav li {
+    float: left;
+    margin: 0 -1px -1px 0;
+}
+
+.subNavType2 ul li:first-child {
+    margin-left: 0;
+}
+
+.subNav_wrap .sub_nav li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+    position: relative;
+    color: #898989;
+    font-size: 15px;
+    text-align: center;
+    padding: 12px 0;
+    border: 1px solid #ddd;
+	font-weight: 600;
+}
+
+.subNav_wrap .sub_nav li:hover,
+.subNav_wrap .sub_nav li.on {
+    position: relative;
+    z-index: 1;
+}
+
+.subNav_wrap .sub_nav li:hover a,
+.subNav_wrap .sub_nav li.on a {
+    color: #0d3894;
+    border: 1px solid #0d3894;
+    background: #d9ebf9;
+}
+
+
+/* content section */
+.subTopInfo {
+    position: relative;
+    margin-top: 38px;
+    margin-bottom: 40px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.subTopInfo.lineNone {
+    margin-bottom: 30px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.subTopInfo .h2Wrap {}
+
+.subTopInfo .h2Wrap h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #333333;
+	font-family:'NanumSquareRound', Sans-serif !important;
+}
+
+.subTopInfo .lnb {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    line-height: 1.1;
+}
+
+.subTopInfo .lnb:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.subTopInfo .lnb span {
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #999999;
+    background: url('../images/bull_lnb.png') left center no-repeat;
+}
+
+.subTopInfo .lnb span img {
+    vertical-align: middle;
+}
+
+.subTopInfo .lnb span:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    background: none;
+}
+
+.subTopInfo .lnb span.last {
+    color: #235ba6;
+}
+
+.jobInfoWrap {
+    clear: both;
+    /*border:2px solid #eee;*/
+    text-align: center;
+    background: url('../images/type01.jpg') no-repeat;
+	background-size:cover;
+    height: 620px;
+    padding-top: 142px !important;
+    line-height: 23px;
+    margin-top: 50px;
+}
+
+.jobInfoWrap .text span {
+    font-size: 13px;
+    color: #3091c9;
+    font-weight: bold;
+}
+
+.jobInfoWrap>img {
+    margin: 30px 0;
+}
+
+/* 드래그방지 */
+.contStart {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.con_print_btn_error {
+    float: right;
+    display: block;
+    margin-bottom: 60px;
+    padding: 0.375rem 0.5rem;
+    width: 3.75rem;
+    text-align: center;
+    font-size: 13px;
+    background: #eaeaea;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+footer {
+    margin-top: 150px;
+}
+
+
+@media screen and (max-width: 1180px) {
+    .subNav_wrap .sub_nav {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 15px 12px 15px 17px;
+        overflow: hidden;
+    }
+
+    .con_print_btn {
+        margin-bottom: 15px;
+    }
+        
+    footer {
+        margin-top: 75px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .sub_title p {
+        font-size: 30px;
+    }
+
+    .sub_title>.content_wrap {
+        background-position: right bottom;
+        background-size: auto 80%;
+		padding: 0 15px;
+    }
+
+    .subNav_wrap .sub_nav li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sub_title {
+        height: 160px;
+    }
+
+    .sub_title p {
+        font-size: 19px;
+    }
+
+    .sub_title>.content_wrap {
+        background-position: right bottom;
+        background-size: auto 55%;
+    }
+
+    .subNav_wrap .sub_nav li a {
+        font-size: 12px;
+    }
+
+    .jobInfo .content_wrap {overflow: visible;}
+
+    .subNav_wrap .sub_nav li {
+        width: 50%;
+    }
+
+    .ceoWrap .text img {
+        max-width: 100%;
+    }
+
+    .contStart img {
+        max-width: 100%;
+    }
+
+    .jobInfoWrap {
+        padding: 48px 16px;
+        height: auto;
+        background-position:-84px -21px;
+        border: 1px solid #eaeaea;
+        box-shadow: 0px 8px 12px 6px rgba(15,4,7,.1);
+    }
+
+    .subTopInfo {
+        margin: 24px 0 16px;
+        padding: 0 0 36px;
+    }
+
+    .subTopInfo .lnb {
+        position: relative;
+        right: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subTopInfo .lnb span {
+        float: none;
+    }
+
+    .subTopInfo .h2Wrap {}
+
+    .subTopInfo .h2Wrap h2 {
+        text-align: center;
+    }
+
+.subNav_wrap .sub_nav li a {padding: 10px 0;}
+
+}

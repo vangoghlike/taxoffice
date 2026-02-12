@@ -1,0 +1,60 @@
+@charset 'utf-8';
+.hanpage_cate_onoff {
+    display:none;
+}
+@media screen and (max-width: 930px) {
+    .sub_title {
+        display:none;
+    }
+    .tabType01.kl-type > ul li {
+        border:none !important;
+    }
+    .contStart th {
+        font-size:0.75rem;
+        line-height:1.5;
+    }
+    .blist table thead th {
+        padding:0.5rem 0.25rem;
+    }
+    .blist table tbody td {
+        padding:0.5rem 0.25rem;
+    }
+    .subTopInfo {
+        display:none;
+    }
+    .viewWrap {
+        border-top:none;
+    }
+    .contStart {
+        padding-top:0.5rem;
+    }
+    .viewWrap .line {
+        padding:0.5rem 0;
+    }
+    .viewWrap .line .sbj {
+        display:block;
+        padding:0.5rem 0 0.25rem;
+    }
+    .viewWrap .line .box .txt {
+        padding-right:0;
+    }
+    .btnBbs a {
+        font-size:0.75rem;
+    }
+    .hanpage_cate_wr.off {
+        display:none;
+    }
+    .hanpage_cate_onoff {
+        display:block;
+        margin:0.25rem auto 0;
+        padding:0.25rem 0.25rem;
+        width:7.75rem;
+        font-size:0.75rem;
+        text-align: center;
+        border-radius:0.75rem;
+        border:1px solid #ddd;
+        background:#eaeaea;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+}

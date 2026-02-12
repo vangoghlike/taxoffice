@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+.subTop {
+    position: relative;
+    height:120px;
+    background-size: auto 100%;
+    background:url('../images/consulting/subTop01.jpg') center top no-repeat;
+    background-size: auto 100%;
+}
+.subTop .text {
+    position:absolute;
+    top:50%;
+    left:50%;
+    padding:0 4px;
+    width:100%;
+    transform: translate(-50%, -50%);
+    font-size:1.08rem;
+    color:#fff;
+    text-align: center;
+}
+.subTop.tax_cs .text {
+    padding-top:0;
+    line-height:1.5;
+    font-size:1.08rem;
+}
+
+.category_li {
+    margin:0 auto;
+    width:100%;
+    max-width:15rem;
+    margin-bottom:1.0rem;
+    border-bottom:1px solid #dedede;
+    text-align: center;
+}
+.category_li li {
+    padding:0.375rem 0.125rem;
+    width:100%;
+    text-align: center;
+    border:1px solid #dedede;
+    border-bottom:none;
+    background: #fff;
+    color:#0f0f0f;
+    font-size:0.75rem;
+}
+.category_li.hidn {
+    display: none;
+}
+.category_li.cs_view {
+    display: none;
+}
+.category_li.tcs_view {
+    display: none;
+}
+.category_li.tcs li {
+    padding-left:1.0rem;
+    padding-right:1.0rem;
+    text-align: left;
+}
+.category_li.tcs li label {
+    display: block;
+    text-align: center;
+}
+.category_li.tcs li label input {
+    display: none;
+}
+.category_li.tcsPop .cate_list:hover {
+    color:#fff;
+    background:#316ca6;
+}
+.category_li.tcsPop .cate_list:hover a {
+    color:#fff;
+}
+.category_li.tcsPop .cate_list a {
+    display: block;
+}
+.teslList2.consulting .consulting_list li .category_li.tcs li:hover {
+    background: #316ca6;
+    color:#fff;
+}
+.teslList2.consulting .consulting_list li .category_li.tcs li.checked {
+    background: #316ca6;
+    color:#fff;
+}
+#goTalkPop .category_li {
+    max-width: 100%;
+}
+#goTalkPop .category_li li {
+    background: #fff;
+    color:#0f0f0f;
+}
+.teslList2.consulting .consulting_list {
+    border-top:none;
+}
+.teslList2.consulting .consulting_list > li {
+    margin-bottom:0.875rem;
+    box-shadow:0px 0px 8px #eaeaea;
+    border:1px solid #e8e9e0;
+    transition: all 0.3s;
+    text-align: center;
+}
+.teslList2.consulting .consulting_list > li:hover {
+    background: #eaeaea;
+}
+.teslList2.consulting .consulting_list > li:hover .category_li li {
+    background: #dcdcdc;
+}
+.teslList2.consulting .consulting_list > li:after {
+    clear: both;
+    display: block;
+    width: 100%;
+    content: '';
+}
+.teslList2.consulting .topInfo {
+    vertical-align: top;
+    display: inline-block;
+    padding:1.0rem;
+    width:12.0rem;
+
+}
+.teslList2.consulting .selView {
+    padding:0;
+    margin:0;
+    width:10.0rem;
+}
+.teslList2.consulting .topInfo .selView .img {
+    float:none;
+    width:100%;
+    text-align: center;
+}
+.teslList2.consulting .topInfo .selView .img img {
+    width: 80%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.teslList2.consulting .topInfo .selView .txt {
+    margin:0;
+}
+.teslList2.consulting .topInfo .selView .txt .tit01 {
+    text-align: center;
+}
+.teslList2.consulting .topInfo .selView .txt .tit02 {
+    font-size:0.75rem;
+    text-align: center;
+}
+.teslList2.consulting .viewInfo {
+    display: block;
+    clear: both;
+    float: unset;
+    background: none;
+    text-align: left;
+}
+.teslList2.consulting .viewInfo .in > ul > li {
+    padding:0.75rem;
+    background: none;
+}
+.teslList2.consulting .viewInfo .in > ul > li:last-child {
+    border-bottom:none;
+}
+.teslList2.consulting .itemInfo {
+    vertical-align: top;
+    display: inline-block;
+    padding:0.75rem;
+    width:7.5rem;
+}
+.consulting_btn li {
+    padding:0.25rem 0.25rem 0.25rem 0.25rem;
+    display: block;
+    width: 100%;
+    border:1px solid #eee;
+    border-bottom:none;
+    text-align: center;
+}
+.consulting_btn li:last-child {
+    border-bottom:1px solid #eee;
+}
+.consulting_btn:after {
+    clear:both;
+    content:'';
+    display: block;
+}
+.consulting_btn li i {
+    display: block;
+    margin-bottom:0.125rem;
+    color:#316ca6;
+    font-size:1.5rem;
+}
+.consulting_btn li tag {
+    color:#000;
+    transition: all 0.3s;
+    background: none;
+    border:none;
+}
+.consulting_btn li:hover tag {
+    background: #316ca6;
+    color:#fff;
+}
+a.consultingBtn,
+a.counselGoMail,
+a.counselGoVisit {
+    display: block;
+    cursor: pointer;
+}
+.tcs_title {
+    padding:0.5rem 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+.telSca {margin:20px;}
+.telSca .line {margin-bottom:10px; padding-bottom:0.25rem; height: auto; border:1px solid #c9c9c9;}
+.telSca .line input {font-size:15px;}
+.telSca .line.ipBox {position:relative;}
+.telSca .line.ipBox button {display:block; position:absolute;right:10px; top:10px; text-indent:-999em; border:none;  width:16px; height:19px; background:url('../images/mbv/bgTax13.png') no-repeat; background-size:16px auto;}
+.telSca .line #select_box label {color:#949494; font-size:14px;  font-weight:400;}
+/* serim :: custom mobile :: kjw :: 2017.11.22 */
+.telSca .line.seCst {border:none;}
+.telSca .line.seCst input {z-index:1;position:absolute;top:0;left:40%;height:42px;width:60%;background:url(../images/mbv/bullCstBtn.png) center right no-repeat;  background-size: 45px 42px;}
+.telSca .line.seCst span div.seCstBg {z-index:0;position:absolute;top:0;left:40%;height:42px;width:60%;background:#fff;}
+.telSca .line #select_box span {position:absolute;top:13px;left:10px;line-height:15px;color:#949494; font-size:14px;  font-weight:400;}
+/* =========================================== */
+
+.telSca .textZone {background:#fff; }
+.telSca .textZone textarea { font-size:14px; padding:15px; width:100%; height:150px; border:none; resize:none;}
+
+.telSca .userInfoZone {
+    margin:0 auto 0.5rem;
+    padding:1rem;
+    width:100%;
+    background: #fff;
+    border:1px solid #ddd;
+}
+.telSca .userInfoZone p {
+    margin:0.25rem auto;
+    line-height:2;
+}
+.telSca .userInfoZone p.infoTitle {
+    font-weight:600;
+    margin-bottom:0.5rem;
+}
+.telSca .userInfoZone p span.infoTt {
+    display: inline-block;
+    width:48px;
+}
+.telSca .userInfoZone p input {
+    padding:0.25rem;
+    border:1px solid #eee;
+}
+.telSca.mailList .whiteBox2 {
+    margin:0;
+}

@@ -1,0 +1,459 @@
+@charset "utf-8";
+
+.subTop {
+    position: relative;
+    height:120px;
+    background-size: auto 100%;
+    background:url('../images/consulting/subTop01.png') center top no-repeat;
+    background-size: auto 100%;
+}
+.subTop .text {
+    position:absolute;
+    top:50%;
+    left:50%;
+    padding:0 4px;
+    width:100%;
+    transform: translate(-50%, -50%);
+    font-size:1.08rem;
+    color:#fff;
+    text-align: center;
+}
+.subTop.tax_cs .text {
+    padding-top:0;
+    line-height:1.5;
+    font-size:1.08rem;
+}
+
+.category_li {
+    margin:0 auto;
+    width:100%;
+    max-width:15rem;
+    margin-bottom:1.0rem;
+    border-bottom:1px solid #dedede;
+    text-align: center;
+}
+.category_li li {
+    padding:0.375rem 0.125rem;
+    width:100%;
+    text-align: center;
+    border:1px solid #dedede;
+    border-bottom:none;
+    background: #fff;
+    color:#0f0f0f;
+    font-size:0.75rem;
+}
+.category_li.hidn {
+    display: none;
+}
+.category_li.cs_view {
+    display: none;
+}
+.category_li.tcs_view {
+    display: none;
+}
+.category_li.tcs li {
+    padding-left:1.0rem;
+    padding-right:1.0rem;
+    text-align: left;
+}
+.category_li.tcs li label {
+    display: block;
+    text-align: center;
+}
+.category_li.tcs li label input {
+    display: none;
+}
+.category_li.tcsPop .cate_list:hover {
+    color:#fff;
+    background:#316ca6;
+}
+.category_li.tcsPop .cate_list:hover a {
+    color:#fff;
+}
+.category_li.tcsPop .cate_list a {
+    display: block;
+}
+.teslList2.consulting .consulting_list li .category_li.tcs li:hover {
+    background: #316ca6;
+    color:#fff;
+}
+.teslList2.consulting .consulting_list li .category_li.tcs li.checked {
+    background: #316ca6;
+    color:#fff;
+}
+#goTalkPop .category_li {
+    max-width: 100%;
+}
+#goTalkPop .category_li li {
+    background: #fff;
+    color:#0f0f0f;
+}
+.teslList2.consulting .consulting_list {
+    border-top:none;
+}
+.teslList2.consulting .consulting_list > li {
+    margin-bottom:0.875rem;
+    box-shadow:0px 0px 8px #eaeaea;
+    border:1px solid #e8e9e0;
+    transition: all 0.3s;
+    text-align: center;
+}
+.teslList2.consulting .consulting_list > li:hover {
+    background: #eaeaea;
+}
+.teslList2.consulting .consulting_list > li:hover .category_li li {
+    background: #dcdcdc;
+}
+.teslList2.consulting .consulting_list > li:after {
+    clear: both;
+    display: block;
+    width: 100%;
+    content: '';
+}
+.teslList2.consulting .topInfo {
+    vertical-align: top;
+    display: inline-block;
+    padding:1.0rem;
+    width:12.0rem;
+
+}
+.teslList2.consulting .selView {
+    padding:0;
+    margin:0;
+    width:10.0rem;
+}
+.teslList2.consulting .topInfo .selView .img {
+    float:none;
+    width:100%;
+    text-align: center;
+}
+.teslList2.consulting .topInfo .selView .img img {
+    width: 80%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.teslList2.consulting .topInfo .selView .txt {
+    margin:0;
+}
+.teslList2.consulting .topInfo .selView .txt .tit01 {
+    text-align: center;
+}
+.teslList2.consulting .topInfo .selView .txt .tit02 {
+    font-size:0.75rem;
+    text-align: center;
+}
+.teslList2.consulting .viewInfo {
+    display: block;
+    clear: both;
+    float: unset;
+    background: none;
+    text-align: left;
+}
+.teslList2.consulting .viewInfo .in > ul > li {
+    padding:0.75rem;
+    background: none;
+}
+.teslList2.consulting .viewInfo .in > ul > li:last-child {
+    border-bottom:none;
+}
+.teslList2.consulting .itemInfo {
+    vertical-align: top;
+    display: inline-block;
+    padding:0.75rem;
+    width:7.5rem;
+}
+.consulting_btn li {
+    padding:0.25rem 0.25rem 0.25rem 0.25rem;
+    display: block;
+    width: 100%;
+    border:1px solid #eee;
+    border-bottom:none;
+    text-align: center;
+}
+.consulting_btn li:last-child {
+    border-bottom:1px solid #eee;
+}
+.consulting_btn:after {
+    clear:both;
+    content:'';
+    display: block;
+}
+.consulting_btn li i {
+    display: block;
+    margin-bottom:0.125rem;
+    color:#316ca6;
+    font-size:1.5rem;
+}
+.consulting_btn li tag {
+    color:#000;
+    transition: all 0.3s;
+    background: none;
+    border:none;
+}
+.consulting_btn li:hover tag {
+    background: #316ca6;
+    color:#fff;
+}
+a.consultingBtn,
+a.counselGoMail,
+a.counselGoVisit {
+    display: block;
+    cursor: pointer;
+}
+.tcs_title {
+    padding:0.5rem 0.25rem;
+}
+
+.tcs_con {
+    padding:0 0.75rem 1.0rem;
+}
+.btnCenter.tax_tcs {
+    padding:1.0rem 1.0rem 2.0rem;
+}
+
+
+
+
+
+
+
+.telSca {margin:20px;}
+.telSca .line {margin-bottom:10px; padding-bottom:0.25rem; height: auto; border:1px solid #c9c9c9;}
+.telSca .line input {font-size:15px;}
+.telSca .line.ipBox {position:relative;}
+.telSca .line.ipBox button {display:block; position:absolute;right:10px; top:10px; text-indent:-999em; border:none;  width:16px; height:19px; background:url('../images/mbv/bgTax13.png') no-repeat; background-size:16px auto;}
+.telSca .line #select_box label {color:#949494; font-size:14px;  font-weight:400;}
+/* serim :: custom mobile :: kjw :: 2017.11.22 */
+.telSca .line.seCst {border:none;}
+.telSca .line.seCst input {z-index:1;position:absolute;top:0;left:40%;height:42px;width:60%;background:url(../images/mbv/bullCstBtn.png) center right no-repeat;  background-size: 45px 42px;}
+.telSca .line.seCst span div.seCstBg {z-index:0;position:absolute;top:0;left:40%;height:42px;width:60%;background:#fff;}
+.telSca .line #select_box span {position:absolute;top:13px;left:10px;line-height:15px;color:#949494; font-size:14px;  font-weight:400;}
+/* =========================================== */
+
+.telSca .textZone {background:#fff; }
+.telSca .textZone textarea { font-size:14px; padding:15px; width:100%; height:150px; border:none; resize:none;}
+
+.telSca .userInfoZone {
+    margin:0 auto 0.5rem;
+    padding:1rem;
+    width:100%;
+    background: #fff;
+    border:1px solid #ddd;
+}
+.telSca .userInfoZone p {
+    margin:0.25rem auto;
+    line-height:2;
+}
+.telSca .userInfoZone p.infoTitle {
+    font-weight:600;
+    margin-bottom:0.5rem;
+}
+.telSca .userInfoZone p span.infoTt {
+    display: inline-block;
+    width:48px;
+}
+.telSca .userInfoZone p input {
+    padding:0.25rem;
+    border:1px solid #eee;
+}
+.telSca.mailList .whiteBox2 {
+    margin:0;
+}
+
+/* top ul menu */
+.tax_tcs .colBox3 {
+    padding:0.5rem;
+}
+.tax_tcs .option {
+
+}
+.tax_tcs .option:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+}
+.tax_tcs .option li {float: left; width: 33.3%; background:#fff;}
+.tax_tcs .option li.cst-se-hdMn.none {display:none;}
+.tax_tcs .option li.cst-se-hdMn.block {display:block;}
+.tax_tcs .option li a {
+    display: block;
+}
+.tax_tcs .option li button{padding-left:2.5rem; width:100%;background:none;border:none;font-size:0.75rem;height:2.5rem;line-height: 2.5rem; border-top:1px solid #f2f2f2;text-align:left;position:relative;}
+.tax_tcs .option li button::before{content:"";display:block;width:18px;height:18px;position:absolute;top: 0.75rem;left: 0.75rem;background:url('../images/option_off.jpg') no-repeat;background-size:contain;}
+.tax_tcs .option li.on button{background:#f3f9fe}
+.tax_tcs .option li.on  button::before{background:url('../images/option_on.jpg') no-repeat;background-size:contain;}
+
+/*신고의뢰 3단계 table 추가*/
+.tableLsit{border:1px solid #c9c9c9;border-bottom:none;}
+.tableLsit li{border-bottom:1px solid #c9c9c9;    padding-left: 10px;line-height: 30px;}
+.base03 .textZone textarea{width:100%;height:100px;}
+.base03 .selected{background:#f6f6f6;display:none}
+.base03 .selected.on{    display: table-row;}
+.base03 .selected td{padding-left:10px}
+.base03 .selected .tit{    float: left; font-size: 13px; color: #0269bf; line-height: 13px;padding-left: 20px;}
+.base03 .selected .tit.no4{  background: url(../images/mbv/bgTax015.png) left center no-repeat;background-size: 12px auto;}
+.base03 .selected .tit.no5{    background: url(../images/mbv/bgTax016.png) left center no-repeat; background-size: 13px auto}
+
+.base03 .selected .text{    margin-left: 80px;color:#7a7a7a;font-size:13px;}
+
+.howSelect {
+    display: inline-block;
+}
+.howSelect input[type=radio], .howSelect input[type=checkbox] {display:none;}
+.howSelect input[type=radio] + label::before, .howSelect input[type=checkbox] + label::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: url(../images/consulting/option_off.jpg);
+    background-size: contain;
+    vertical-align: middle;
+}
+.howSelect input[type=radio]:checked + label::before, .howSelect input[type=checkbox]:checked + label::before {
+    background: url(../images/consulting/option_on.jpg);
+    background-size: contain;
+}
+
+.selectZone .textZone textarea{width:100%;height:100px;}
+.selectZone .slz.on{display: block;}
+.selectZone .slz {margin-top:0.5rem;padding:0.75rem 1.0rem;background:#f6f6f6;display:none}
+.selectZone .slz .tit{float: left; font-size: 13px; color: #0269bf; line-height: 13px;padding-left: 20px;}
+.selectZone .slz .tit.no4{background: url(../images/consulting/bgTax015.png) left center no-repeat;background-size: 12px auto;}
+.selectZone .slz .tit.no5{background: url(../images/consulting/bgTax016.png) left center no-repeat; background-size: 13px auto}
+.selectZone .slz .text{margin-left: 80px;color:#7a7a7a;font-size:13px;}
+
+
+/* login form */
+#csl_deepBg {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+}
+#csl_login_form {
+    display:none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    max-width:600px;
+    width:90%;
+    height: auto;
+    border:1px solid #eee;
+    box-shadow:0px 0px 16px rgba(90,100,100,0.6);
+    z-index: 10000;
+}
+#csl_login_form .csl_login_tab {
+    width: 100%;
+    height: 3rem;
+    background: #f9f9f9;
+}
+#csl_login_form .csl_login_tab li {
+    float: left;
+    width: 50%;
+    height: inherit;
+}
+#csl_login_form .csl_login_tab li a {
+    display: block;
+    padding:1rem;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    color: #606060;
+    font-size: 0.875rem;
+    cursor: pointer;
+    background: #dadada;
+}
+#csl_login_form .csl_login_tab li.on a {
+    background: #f9f9f9;
+}
+#csl_login_form .csl_ip_tab {
+    position: relative;
+    width: 100%;
+}
+#csl_login_form .csl_ip_tab li.cit_li {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+#csl_login_form .csl_ip_tab li.cit_li.on {
+    display: block;
+    position: relative;
+}
+#csl_login_form .login {
+    padding-bottom:0;
+    border:none;
+}
+#csl_login_form .csl_lform_hd {
+    position:relative;
+    padding:0.75rem 1rem;
+    font-size:1.12rem;
+    color:#fff;
+    background: #235ba6;
+}
+#csl_login_form .csl_lform_hd .lfom_close {
+    position: absolute;
+    top:0.5rem;
+    right:0.75rem;
+    padding: 0.4rem;
+    font-size:0.8rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+}
+#csl_login_form .csl_lform_hd .lfom_home {
+    position: absolute;
+    top:0.5rem;
+    right:0.75rem;
+    padding: 0.4rem;
+    font-size:0.8rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+}
+#csl_login_form .cit_ip_info {
+    padding:3.125rem 0.5rem 0;
+    background: #f9f9f9;
+}
+#csl_login_form .cit_ip_info > div {
+    margin:0 auto;
+    max-width:460px;
+}
+#csl_login_form .cit_ip_info .info_wrap input {
+    width: 100%;
+    padding: 0 0 0 25px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 5px;
+    height: 50px;
+}
+#csl_login_form .cit_ip_info .btns_wrap {
+    margin-top:20px;
+    padding:30px 0 40px;
+}
+#csl_login_form .cit_ip_info .btns_wrap a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #4f5359;
+    color: #fff;
+}
+
+#csl_login_form .csl_txt_area {
+    clear: both;
+    background: #eaeaea;
+    width:100%;
+}
+#csl_login_form .csl_txt_area p {
+    padding:0.75rem 1.5rem;
+    line-height: 1.6;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<title>::: 세림세무법인 :::</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<link href="/pages/mobile/css/base/jquery-ui-1.9.2.custom.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" type="text/css" href="/pages/mobile/css/common.css" media="all">
+<link rel="stylesheet" type="text/css" href="/pages/mobile/css/dev.css" media="all">
+<script type="text/javascript" src="/common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/common/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/common/js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="/common/js/swiper.min.js"></script>
+<script type="text/javascript" src="/pages/mobile/js/common.js"></script>
+<script type="text/javascript">
+var curr_menu_no = ['1'];
+//$(document).ready(function() {gnbActive(3);});
+</script>
+<script src="/common/js/dev.js.php?lang=ko"></script>
+</head>
+<body>
+<!-- Skip Nav -->
+<div id="skipnavigation">
+<a href="#container">본문내용 바로가기</a>
+</div>
+<!-- //Skip Nav --><!-- Wrap -->
+<div class="wrap">
+<!-- Head -->
+<div class="head">
+<div class="subHeader">
+<div class="btnBack">
+<a href="#" class="act_back"><img src="/pages/mobile/images/btnBack.png" alt="뒤로"></a>
+</div>
+<div class="subTitle">
+보수결제</div>
+</div>
+</div>
+<!-- //Head --><!-- subContainer -->
+<div class="subContainer">
+<div class="telTab">
+<ul>
+<li>1단계</li>
+<li>2단계</li>
+<li class="active">3단계</li>
+<li>4단계</li>
+</ul>
+</div>
+
+<!-- 컨텐츠 작업 -->
+<div class="telTit pt30">
+	<div class="tit01">결제할 금액 선택하기</div>
+	<div class="tit02">결제하실 금액을 선택하여 주세요. </div>
+</div>
+
+
+
+<form id="frm_tax1" name="frm_tax1" method="post">
+<input type="hidden" name="step" value="4">
+<input type="hidden" name="category" value="335">
+<input type="hidden" name="category_name" value="양도소득세, 지방세">
+<input type="hidden" name="etc01" value="전화상담">
+<input type="hidden" name="mngr" value="4">
+<input type="hidden" name="mngr_name" value="김창진 세무사">
+<input type="hidden" name="option_name" value="" class="req" title="상담 이용권을 선택해주세요.">
+<div class="teslList3">
+	<ul>
+		<li>
+			<div class="topInfo">
+				<div class="selView">
+					<div class="img">
+					<img src="/pages/mobile/images/bgnewpay.png" alt="상담 10분 이용권">
+				</div>
+				<div class="txt">
+					<div class="tit01">55,000원</div>
+				</div>
+				</div>
+					<div class="btn">
+					<input type="radio" name="option" id="point1" value="1" data-name="상담 10분 이용권"> <label for="point1">선택</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="topInfo">
+			<div class="selView">
+				<div class="img">
+					<img src="/pages/mobile/images/bgnewpay.png" alt="상담 20분 이용권">
+				</div>
+				<div class="txt">
+					<div class="tit01">110,000원</div>
+				</div>
+				</div>
+					<div class="btn">
+					<input type="radio" name="option" id="point2" value="2" data-name="상담 20분 이용권"> <label for="point2">선택</label>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="topInfo">
+				<div class="selView">
+					<div class="img">
+						<img src="/pages/mobile/images/bgnewpay.png" alt="상담 30분 이용권">
+					</div>
+				<div class="txt">
+					<div class="tit01">165,000원</div>
+				</div>
+				</div>
+					<div class="btn">
+					<input type="radio" name="option" id="point3" value="3" data-name="상담 30분 이용권"> <label for="point3">선택</label>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="payCont">
+	<table>
+		<colgroup>
+			<col style="width:"/>
+			<col style="width:"/>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">상담수수료</th>
+				<td style="font-size:18px;color:#0269bf">5,000 원</td>
+			</tr>
+			<tr>
+				<th scope="row">보유포인트</th>
+				<td>10,090 포인트</td>
+			</tr>
+			<tr>
+				<th scope="row">
+					사용포인트
+					<span>보유포인트 5,000 이상일 경우 사용 가능 </span>
+				</th>
+				<td>
+					<input type="number" /> <span>포인트</span>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">결제금액</th>
+				<td style="font-size:18px;color:#0269bf">5,000 원</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</form>
+
+
+
+
+</div>
+<!-- //subContainer -->
+<!-- gnb -->
+<div class="gnb">
+<ul>
+<li class="no1 menu0">
+<a href="/m/"><span>홈</span></a>
+</li>
+<li class="no2 menu1 on">
+<a href="/m/tax"><span>보수결제</span></a>
+</li>
+<li class="no3 menu2">
+<a href="/m/111"><span>이용안내</span></a>
+</li>
+<li class="no4 menu3">
+<a href="/m/mypage"><span>내정보</span></a>
+</li>
+</ul>
+</div>
+<!-- //gnb --></div>
+<!-- //Wrap -->
+
+<script>
+
+$(function(){
+	$(document).on('click', '.btn', function() {
+		$('.payCont').css({'display':'block'})
+	});
+})
+
+
+
+</script>
+
+
+</body>
+
+</html>

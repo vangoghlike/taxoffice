@@ -1,0 +1,78 @@
+
+    <!-- footer -->
+    <footer>
+        <h2 class="hidden">footer</h2>
+        <div class="footer_bottom">
+            <div class="f_btm_top">
+                <div class="content_wrap">
+                    <ul class="footer_nav">
+                        <li><a href="http://www.etaxoffice.co.kr/eng/sub/?cat_no=12">About Us</a></li>
+                        <!--<li><a href="/fdi_eng/sub/?cat_no=72">소통공간</a></li>-->
+                        <li><a href="http://www.etaxoffice.co.kr/eng/sub/?cat_no=8">Privacy Notice</a></li>
+                        <li><a href="http://www.etaxoffice.co.kr/eng/sub/?cat_no=9">Terms and Conditions</a></li>
+                        <!--<li class="mo_footer"><a href="/sub/tax4.php">보수결제</a></li>
+                        <li class="mo_footer"><a href="/mypage/pay.php">내 결제정보</a></li>-->
+                        <li><a href="http://www.etaxoffice.co.kr/eng/sub/report.php">Report Home Error</a></li>
+                    </ul>
+                    <div class="footer_sns">
+                        <a id="kakao-link-btn" href="javascript:sendLink();" class="ir_pm">kakao</a>
+                        <a href="https://blog.naver.com/selimtaxoffice" class="ir_pm">blog</a>
+                    </div>
+                   <div class="foot_family_box">
+						<ul class="foot_family_top">
+							<li>FAMILY SITE<img src="/pub/images/foot_arrow.png"/></li>
+						</ul>
+						<ul class="foot_family_inner">
+							<a href="http://www.taxoffice.co.kr/" target=""><li>SELIM KOREAN</li></a>
+							<a href="/" target=""><li>SELIM ENGLISH</li></a>
+							<a href="http://www.taxcallcenter.com/"><li>CALL CENTER</li></a>
+							<a href="http://www.taxcall.co.kr/taxcall/sub/?cat_no=4"><li>HAN-PAGE</li></a>
+						</ul>
+					</div>
+                    <p>
+						Company Name: Selim Tax & Accouting Firm ｜ Representative: Chang-Jin Kim ｜ Privacy Officer: Sam-yeop Kang ｜ Address: Rm701, Heajeon bldg, 488 Siheung-daero, Geumcheon-gu, Seoul
+						Company Number: 02-854-2100 ｜ Fax: 02-854-2120 ｜ Customer Care: 02-854-2133｜ Email: sykang@taxemail.co.kr ｜ Business Number: 119-869-4621 ｜Mail-order Business No.: 제 2012-서울금천-0062호
+						COPYRIGHT©2017 SELIM TAX. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- pc_aside -->
+    <nav class="aside">
+        <h2 class="hidden">quick_nav</h2>
+        <ul>
+            <li class="pc1112"><a href="http://www.taxoffice.co.kr/sub/tax4.php"><img src="/pub/images/quick_btn3.png" alt="Payment"><br><span>Payment</span></a></li>
+            <li class="pc1112"><a href="/fdi_eng/mypage/user_info.php"><img src="/fdi_eng/pub/images/quick_btn4.png" alt="마이페이지"><br><span>My Page</span></a></li>
+            <li class="mo"><a href="/"><span class="img"><img src="/fdi_eng/pub/images/mo_quick3.png" alt="Home"></span>Home</a></li>
+            <li class="mo"><a href="/fdi_eng/sub/?cat_no=12"><span class="img"><img src="/pub/images/mo_quick.png" alt="About Us"></span>About Us</a></li>
+            <li class="mo"><a href="http://www.taxoffice.co.kr/sub/tax4.php"><span class="img"><img src="/pub/images/quick_btn3.png" alt="Payment"></span>Payment</a></li>
+            <li class="mo"><a href="/fdi_eng/mypage/user_info.php"><span class="img"><img src="/pub/images/mo_quick2.png" alt="MyPage"></span>My Page</a></li>
+			<?if($_SESSION[$_SITE["DOMAIN"]]["MEMBER"]["ID"] != ""){?>
+				<li class="mo"><a href="/module/member/eng_logout.php"><span class="img"><img src="/pub/images/quick_btn4.png" alt="Logout"></span>Logout</a></li>
+			<?}else{?>
+				<li class="mo"><a href="/fdi_eng/member/login.php"><span class="img"><img src="/pub/images/quick_btn4.png" alt="Login"></span>Login</a></li>
+			<?}?>
+        </ul>
+    </nav>
+    <!-- pc_aside end -->
+    <a href="javascript:void(0);" class="topbtn_new">TOP</a>
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script type='text/javascript'>
+	// // 사용할 앱의 JavaScript 키를 설정해 주세요.
+	Kakao.init('74546251e56d8047240891a67beafc9c');
+	// // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+	Kakao.Link.createCustomButton({
+	container: '#kakao-link-btn',
+	templateId: 32859,
+	templateArgs: {
+	'title': '앱 추천',
+	'description': '세림세무법인 앱추천'
+	}
+	});
+	//]]>
+	</script>
+</body>
+</html>

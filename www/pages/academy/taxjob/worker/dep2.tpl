@@ -1,0 +1,22 @@
+<!-- subNav -->
+<div class="subNav subNavcustomer">
+	<ul { ? USERINFO['user_id'] }class="subNav_login"{ / }>
+
+	{ ? USERINFO['user_id'] }
+	<li class="menu_member_userinfo"><a href="{BASE_URL}/userinfo">회원정보수정</a></li>
+	<li class="menu_counsel_tj_user_idx"><a href="{BASE_URL}/tj_user_idx">이력 관리</a></li>
+	<li class="menu_counsel_tj_cpny_idx"><a href="{BASE_URL}/tj_cpny_idx">구인 관리</a></li>
+	{ ? MNGR_INFO['show_yn'] == 'Y' }
+	{*					<li class="menu_counsel_c_info_list"><a href="{BASE_URL}/c_info_list">상담예약확인</a></li>*}
+	<li class="menu_counsel_c_info_page"><a href="{BASE_URL}/c_info_page">상담자 정보수정</a></li>
+	{ / }
+	{ : }
+	<li class="menu_member_login"><a href="{BASE_URL}/login">로그인</a></li>
+	<li class="menu_member_join"><a href="{BASE_URL}/join">회원가입</a></li>
+	<li class="menu_member_findid menu_member_findpw"><a href="{BASE_URL}/findid">아이디/비밀번호 찾기</a></li>
+	{ / }
+	<li class="menu_member_agree"><a href="{BASE_URL}/agree">이용약관</a></li>
+	<li class="menu_member_policy"><a href="{BASE_URL}/policy">개인정보 취급방침</a></li>
+	</ul>
+</div>
+<!-- //subNav -->
