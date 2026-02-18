@@ -2,10 +2,10 @@
 //DB Config
 $_conf_db = array(
     "main_db"=>array(
-        "host"=>"119.205.211.179",
-        "db"=>"taxoffice2022",
-        "user"=>"taxoffice2022",
-        "password"=>"selim3400!!")
+        "host"=>"",
+        "db"=>"",
+        "user"=>"",
+        "password"=>"")
 );
 
 //TABLE Config
