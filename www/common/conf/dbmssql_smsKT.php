@@ -2,10 +2,10 @@
 
 //DB Connect
 function SetMSConn(){
-	$hostname = "220.73.130.44"; // 서버 ip 
-	$username = "smsuser_live"; //db 접근 user 
-	$password = "railpark_pass"; //db 접근 user password 
-	$dbname = "SMS_KT_MCSAGENT_LIVE"; //DB 이름 
+	$hostname = ""; // 서버 ip 
+	$username = ""; //db 접근 user 
+	$password = ""; //db 접근 user password 
+	$dbname = ""; //DB 이름 
 
 	$mscon=MSSQL_CONNECT($hostname, $username, $password) or DIE("DATABASE FAILED TO RESPOND."); 
 	mssql_select_db($dbname, $mscon) or DIE("Table unavailable"); 
